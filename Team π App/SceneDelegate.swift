@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  PiBook
+//  Team π App
 //
 //  Created by Kanta on 2025/11/14.
 //

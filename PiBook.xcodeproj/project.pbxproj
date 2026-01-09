@@ -10,23 +10,10 @@
 		B7D9009D2EC730FD00A1EF32 /* PiBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BB3457192F0BB2710098256A /* Exceptions for "PiBook" folder in "PiBook" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B7D9009C2EC730FD00A1EF32 /* PiBook */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B7D9009F2EC730FD00A1EF32 /* PiBook */ = {
+		B78704D62F11B9AB005F629D /* Team π App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BB3457192F0BB2710098256A /* Exceptions for "PiBook" folder in "PiBook" target */,
-			);
-			path = PiBook;
+			path = "Team π App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +32,7 @@
 		B7D900942EC730FD00A1EF32 = {
 			isa = PBXGroup;
 			children = (
-				B7D9009F2EC730FD00A1EF32 /* PiBook */,
+				B78704D62F11B9AB005F629D /* Team π App */,
 				B7D9009E2EC730FD00A1EF32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B7D9009F2EC730FD00A1EF32 /* PiBook */,
+				B78704D62F11B9AB005F629D /* Team π App */,
 			);
 			name = PiBook;
 			packageProductDependencies = (
