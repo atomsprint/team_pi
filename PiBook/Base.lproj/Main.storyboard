@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Team_π_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
         <!--View Controller-->
         <scene sceneID="XVr-rb-z9x">
             <objects>
-                <viewController id="TRo-0Z-SdZ" customClass="ViewController" customModule="Team_π_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TRo-0Z-SdZ" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2xs-Lq-12i">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,7 +96,7 @@
         <!--View Controller-->
         <scene sceneID="Y2D-ff-h8w">
             <objects>
-                <viewController id="U25-aq-7wG" customClass="ViewController" customModule="Team_π_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U25-aq-7wG" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ff8-2P-BSr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
         <!--Page2 View Controller-->
         <scene sceneID="H09-mS-yxM">
             <objects>
-                <viewController storyboardIdentifier="Page2storyboard" id="Jok-rb-yrs" customClass="Page2ViewController" customModule="Team_π_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page2storyboard" id="Jok-rb-yrs" customClass="Page2ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBv-gz-iOm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

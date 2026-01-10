@@ -1,6 +1,6 @@
 //
 //  Page2ViewController.swift
-//  Team π App
+//  PiBook
 //
 //  Created by Kanta on 2025/11/30.
 //
