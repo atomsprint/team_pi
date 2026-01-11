@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  PiBook
 //
-//  Created by Kanta atoms on 2025/11/14.
+//  Created by Kanta atoms　hokkaidou on 2025/11/14.
 //
 
 import UIKit
