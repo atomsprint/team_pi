@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CE877A122F288EDD00A6DD6B /* 画面遷移.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "画面遷移.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE877A122F288EDD00A6DD6B /* question.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = question.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B7D3FD982F666D4200FF8466 /* Exceptions for "question" folder in "question" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CE877A112F288EDD00A6DD6B /* question */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CE877A142F288EDD00A6DD6B /* 画面遷移 */ = {
+		CE877A142F288EDD00A6DD6B /* question */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "画面遷移";
+			exceptions = (
+				B7D3FD982F666D4200FF8466 /* Exceptions for "question" folder in "question" target */,
+			);
+			path = question;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,7 @@
 		CE877A092F288EDD00A6DD6B = {
 			isa = PBXGroup;
 			children = (
-				CE877A142F288EDD00A6DD6B /* 画面遷移 */,
+				CE877A142F288EDD00A6DD6B /* question */,
 				CE877A132F288EDD00A6DD6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +53,7 @@
 		CE877A132F288EDD00A6DD6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE877A122F288EDD00A6DD6B /* 画面遷移.app */,
+				CE877A122F288EDD00A6DD6B /* question.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE877A112F288EDD00A6DD6B /* 画面遷移 */ = {
+		CE877A112F288EDD00A6DD6B /* question */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE877A252F288EDE00A6DD6B /* Build configuration list for PBXNativeTarget "画面遷移" */;
+			buildConfigurationList = CE877A252F288EDE00A6DD6B /* Build configuration list for PBXNativeTarget "question" */;
 			buildPhases = (
 				CE877A0E2F288EDD00A6DD6B /* Sources */,
 				CE877A0F2F288EDD00A6DD6B /* Frameworks */,
@@ -61,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CE877A142F288EDD00A6DD6B /* 画面遷移 */,
+				CE877A142F288EDD00A6DD6B /* question */,
 			);
-			name = "画面遷移";
+			name = question;
 			packageProductDependencies = (
 			);
 			productName = "画面遷移";
-			productReference = CE877A122F288EDD00A6DD6B /* 画面遷移.app */;
+			productReference = CE877A122F288EDD00A6DD6B /* question.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE877A0D2F288EDD00A6DD6B /* Build configuration list for PBXProject "画面遷移" */;
+			buildConfigurationList = CE877A0D2F288EDD00A6DD6B /* Build configuration list for PBXProject "question" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE877A112F288EDD00A6DD6B /* 画面遷移 */,
+				CE877A112F288EDD00A6DD6B /* question */,
 			);
 		};
 /* End PBXProject section */
@@ -133,7 +146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "画面遷移/Info.plist";
+				INFOPLIST_FILE = question/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -169,7 +182,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "画面遷移/Info.plist";
+				INFOPLIST_FILE = question/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -319,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE877A0D2F288EDD00A6DD6B /* Build configuration list for PBXProject "画面遷移" */ = {
+		CE877A0D2F288EDD00A6DD6B /* Build configuration list for PBXProject "question" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE877A282F288EDE00A6DD6B /* Debug */,
@@ -328,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE877A252F288EDE00A6DD6B /* Build configuration list for PBXNativeTarget "画面遷移" */ = {
+		CE877A252F288EDE00A6DD6B /* Build configuration list for PBXNativeTarget "question" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE877A262F288EDE00A6DD6B /* Debug */,

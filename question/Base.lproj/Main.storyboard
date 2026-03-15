@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KH4-jf-5lF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
@@ -9,53 +9,9 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="全く違う世界を想像するの好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-aT-Rrj">
-                                <rect key="frame" x="39" y="193" width="338" height="140"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdV-S6-nZZ">
-                                <rect key="frame" x="39" y="351" width="148" height="91"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
-                                <connections>
-                                    <segue destination="LEp-R0-Shy" kind="show" id="fhC-Fy-Igc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-Ic-ANU">
-                                <rect key="frame" x="221" y="351" width="142" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
-                                <connections>
-                                    <segue destination="nuQ-e4-JyG" kind="show" id="gNp-TD-Kkd"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="8M0-aT-Rrj" firstAttribute="leading" secondItem="SdV-S6-nZZ" secondAttribute="trailing" constant="-38" id="AY8-hl-svb"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="YCQ-T6-P49"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-80.152671755725194" y="-1592.2535211267607"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="oME-TP-Qcn">
             <objects>
-                <viewController id="nuQ-e4-JyG" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nuQ-e4-JyG" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9g-5W-HnL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +54,7 @@
         <!--View Controller-->
         <scene sceneID="1eI-V8-Ezh">
             <objects>
-                <viewController id="Rek-nf-L6T" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rek-nf-L6T" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKR-gp-7bj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +78,7 @@
         <!--View Controller-->
         <scene sceneID="Eho-wJ-MG4">
             <objects>
-                <viewController id="7ID-Fj-ug4" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7ID-Fj-ug4" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rIa-Sp-9Qa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +121,7 @@
         <!--View Controller-->
         <scene sceneID="k7I-EA-liw">
             <objects>
-                <viewController id="1cB-Su-2k3" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1cB-Su-2k3" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dA5-VJ-4mY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,12 +159,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp2-DK-TXl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1845.0381679389311" y="-336.61971830985919"/>
+            <point key="canvasLocation" x="-1527" y="-185"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ozv-GP-UIl">
             <objects>
-                <viewController id="KH4-jf-5lF" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KH4-jf-5lF" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w99-yF-gNw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +175,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gIx-zt-On6"/>
+                                    <segue destination="Zl1-uG-ZJ3" kind="show" id="1ym-7S-EyN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="フィクションとノンフィクションだったらフィクションが読みたい" lineBreakMode="tailTruncation" numberOfLines="11" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-C5-60k">
@@ -250,7 +206,7 @@
         <!--View Controller-->
         <scene sceneID="mXy-7f-ANy">
             <objects>
-                <viewController id="QMj-2Y-4EJ" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QMj-2Y-4EJ" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YKW-Q4-38b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,12 +225,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxr-X7-b5O" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1324.4274809160304" y="724.64788732394368"/>
+            <point key="canvasLocation" x="-857" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7wT-Kc-Maw">
             <objects>
-                <viewController id="0Kl-fF-ln0" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Kl-fF-ln0" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E5S-Zb-2bZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,12 +249,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iC-1q-qdc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3091" y="653"/>
+            <point key="canvasLocation" x="-1527" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="odf-UQ-4Np">
             <objects>
-                <viewController id="sb5-bJ-5jr" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sb5-bJ-5jr" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MNC-M0-L4k">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,7 +297,7 @@
         <!--View Controller-->
         <scene sceneID="MqP-2i-wYU">
             <objects>
-                <viewController id="Bry-P8-fff" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bry-P8-fff" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0CF-Rj-ATE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,12 +316,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ze-Uj-xlB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.404580152671755" y="569.71830985915494"/>
+            <point key="canvasLocation" x="-80" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zTC-wD-AXz">
             <objects>
-                <viewController id="baP-Hz-daw" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="baP-Hz-daw" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZuJ-Jh-H9V">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,12 +359,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Q2-bB-x5p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="1323"/>
+            <point key="canvasLocation" x="2105" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wTW-do-RoY">
             <objects>
-                <viewController id="5hX-ZF-uIe" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5hX-ZF-uIe" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqU-0i-ocD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,12 +383,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1g-Jz-V6O" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414.50381679389312" y="1254.9295774647887"/>
+            <point key="canvasLocation" x="1439" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DAo-pT-6OO">
             <objects>
-                <viewController id="xSl-tv-4iH" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xSl-tv-4iH" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PF5-Xw-EbX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,12 +407,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhI-Sa-qIp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.51908396946567" y="540.84507042253529"/>
+            <point key="canvasLocation" x="665" y="570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xaK-ln-1Qw">
             <objects>
-                <viewController id="4ai-np-i7X" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4ai-np-i7X" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xuw-HC-02A">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,7 +421,7 @@
                                 <rect key="frame" x="122" y="345" width="149" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="家族"/>
+                                <buttonConfiguration key="configuration" style="filled" title="家族の扉"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghx-Wr-3Jy"/>
@@ -480,7 +436,7 @@
         <!--View Controller-->
         <scene sceneID="8U5-VA-ynJ">
             <objects>
-                <viewController id="LEp-R0-Shy" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LEp-R0-Shy" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZi-bF-tql">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -523,7 +479,7 @@
         <!--View Controller-->
         <scene sceneID="UDr-i8-IZg">
             <objects>
-                <viewController id="OTc-n4-oRe" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OTc-n4-oRe" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ac-1g-kaH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -547,7 +503,7 @@
         <!--View Controller-->
         <scene sceneID="Ils-w8-o48">
             <objects>
-                <viewController id="eSS-DT-ih4" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eSS-DT-ih4" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YI1-Ek-XEI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,12 +513,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="Tjy-js-mrm" kind="show" id="9Od-bu-hJZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK1-F9-0qu">
                                 <rect key="frame" x="221" y="345" width="156" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="D6C-3y-yKN" kind="show" id="ruW-uN-NEv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="怖い話が読みたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0N-jO-fBN">
                                 <rect key="frame" x="116" y="239" width="184" height="38"/>
@@ -579,12 +541,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vug-Pe-QtJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664.8854961832061" y="-894.36619718309862"/>
+            <point key="canvasLocation" x="2105" y="-1592"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6Fe-CQ-mfE">
             <objects>
-                <viewController id="Gys-vo-09q" customClass="ViewController" customModule="画面遷移" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gys-vo-09q" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xka-Jb-aki">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -594,6 +556,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="Ohy-Jb-OEv" kind="show" id="roa-JX-7mj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95N-30-aC3">
                                 <rect key="frame" x="213" y="356" width="156" height="92"/>
@@ -621,11 +586,391 @@
             </objects>
             <point key="canvasLocation" x="664.8854961832061" y="-185.21126760563382"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ux8-b8-fjC">
+            <objects>
+                <viewController id="Zl1-uG-ZJ3" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwb-4x-hnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X2-Wz-lrL">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="LEp-R0-Shy" kind="show" id="BN8-cP-adD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4V6-TW-acW">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="nuQ-e4-JyG" kind="show" id="RcR-r1-AZ5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全く違う世界を想像したい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vev-iz-ev6">
+                                <rect key="frame" x="16" y="232" width="361" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TON-lv-KPK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wlp-4W-eTQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M14-AV-viX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.152671755725194" y="-1592.2535211267607"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uqF-MI-jEx">
+            <objects>
+                <viewController id="Ohy-Jb-OEv" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EoJ-Cu-MrW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-7K-LVF">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="動物の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1o0-rl-Di1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvA-qY-I9o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imp-dq-qqt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Iyz-nF-1yQ">
+            <objects>
+                <viewController id="Tjy-js-mrm" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yiy-ok-I9h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sW-OD-UoU">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="0X0-RZ-BEJ" kind="show" id="Nhs-Z0-OMV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mov-cx-tfe">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="3cl-CC-I6c" kind="show" id="HgH-ya-d47"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パズルが好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iG-oE-IIu">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kbh-Uf-4Bg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="baz-FT-xRn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzp-bD-8nn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s73-vH-dH0">
+            <objects>
+                <viewController id="D6C-3y-yKN" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5s-7M-WkV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-ne-o05">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="Nqs-cR-3GD" kind="show" id="7mv-Cv-fAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-yH-A9a">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="Lbl-dA-xbw" kind="show" id="Z8i-Cb-0Kk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冒険に出かけたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve9-04-LXR">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qop-Nv-i20"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I2L-SS-BSL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCI-Fq-AZx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TI9-O2-CPF">
+            <objects>
+                <viewController id="0X0-RZ-BEJ" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HaU-GW-qsS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3b-Yk-7aB">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ミステリーの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xHq-lg-qwf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="edR-2c-bAb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkQ-XC-dbX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dqI-Vj-oCw">
+            <objects>
+                <viewController id="3cl-CC-I6c" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l3A-hf-u9m">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzO-4I-6Tc">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="恐怖の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7FB-rx-LlZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="177-bJ-Yu3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQ8-u7-ZKa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FYz-3C-ugg">
+            <objects>
+                <viewController id="Lbl-dA-xbw" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cab-ii-cUy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g6-PT-ORP">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="2eI-Sg-zvz" kind="show" id="cZJ-q4-5Rs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaE-xe-2B2">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="z5e-YP-kVs" kind="show" id="UWy-pb-SxK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="神様に興味がある？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-Yo-VQc">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7lr-Ya-pfk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nFt-x7-U8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vt-zC-CuR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BJf-9u-6z6">
+            <objects>
+                <viewController id="Nqs-cR-3GD" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jhn-Cc-2fD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecW-iN-aNW">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="fGi-Pn-nNu" kind="show" id="6c5-c9-ipZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-8q-bfr">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="SZO-iD-CFr" kind="show" id="OuO-tJ-bXe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="魔法が使いたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMy-Cs-YBa">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nCx-Bt-32r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lNS-pg-edP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wz-wd-Byh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="393-jM-Ws6">
+            <objects>
+                <viewController id="z5e-YP-kVs" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JxR-WB-gFa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8w-cw-L5I">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="不思議の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HdW-Wx-StS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tiU-sH-DUp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2k-0o-DHa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i1u-3e-YNo">
+            <objects>
+                <viewController id="2eI-Sg-zvz" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ag2-H3-9IZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTx-Bo-f1b">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="神話の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RhM-zl-ktV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MYH-jT-0Pm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISK-Eq-P17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nnh-uG-hjH">
+            <objects>
+                <viewController id="SZO-iD-CFr" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5s-ft-HSO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XL-B0-M2b">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="冒険の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tvl-bR-RW1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AcV-Us-bEv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRt-bE-Sc2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8fc-G9-DVZ">
+            <objects>
+                <viewController id="fGi-Pn-nNu" customClass="ViewController" customModule="question" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JoZ-eC-a7V">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-Hb-hhS">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ファンタジーの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ABF-1A-qlG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fal-kU-PON"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwo-EG-fJO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="-904"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
