@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -15,7 +16,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbJ-BW-OBB">
@@ -26,7 +27,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="はじめる"/>
                                 <connections>
-                                    <segue destination="TRo-0Z-SdZ" kind="show" id="hl3-Yj-pFy"/>
+                                    <segue destination="ydT-hp-oIc" kind="show" id="9c1-Gz-eUj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本の虫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-zu-g9x">
@@ -45,20 +46,20 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.5" green="1" blue="0.030275378558957827" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gc8-XF-y6g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043.5114503816794" y="130.98591549295776"/>
+            <point key="canvasLocation" x="-2242" y="-1592"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XVr-rb-z9x">
             <objects>
                 <viewController id="TRo-0Z-SdZ" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2xs-Lq-12i">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guz-4f-aSy">
@@ -68,9 +69,6 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="ユーザー登録"/>
-                                <connections>
-                                    <segue destination="U25-aq-7wG" kind="show" id="sXH-JK-ril"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckq-cc-gy2">
                                 <rect key="frame" x="86" y="642" width="220" height="115"/>
@@ -79,9 +77,6 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="ログイン"/>
-                                <connections>
-                                    <segue destination="jhN-ca-Ly4" kind="show" id="7VZ-4L-Hac"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="芋虫" translatesAutoresizingMaskIntoConstraints="NO" id="4o4-bS-K8a">
                                 <rect key="frame" x="38" y="157" width="316" height="165"/>
@@ -95,14 +90,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46w-qL-fjJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733.5877862595419" y="130.98591549295776"/>
+            <point key="canvasLocation" x="1564" y="-2428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y2D-ff-h8w">
             <objects>
                 <viewController id="U25-aq-7wG" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ff8-2P-BSr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生まれた日は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWy-n7-pau">
@@ -170,9 +165,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="次へ"/>
-                                <connections>
-                                    <segue destination="Jok-rb-yrs" kind="show" id="zLG-56-cJe"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="芋虫" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-rM-WO1">
                                 <rect key="frame" x="127" y="0.0" width="309" height="116"/>
@@ -186,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERG-q1-keJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2482" y="-154"/>
+            <point key="canvasLocation" x="2952" y="-2428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CLT-O5-yn8">
@@ -204,14 +196,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cr-VC-QSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="131"/>
+            <point key="canvasLocation" x="-3054" y="-1592"/>
         </scene>
         <!--Page2 View Controller-->
         <scene sceneID="H09-mS-yxM">
             <objects>
                 <viewController storyboardIdentifier="Page2storyboard" id="Jok-rb-yrs" customClass="Page2ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBv-gz-iOm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="どのジャンルが好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL1-gM-XB7">
@@ -235,9 +227,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="決定"/>
-                                <connections>
-                                    <segue destination="TOz-0b-6NP" kind="show" id="uPm-se-puD"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="34T-eE-ncP"/>
@@ -279,14 +268,14 @@
                     </children>
                 </menu>
             </objects>
-            <point key="canvasLocation" x="3212.9770992366412" y="-154.22535211267606"/>
+            <point key="canvasLocation" x="2282" y="-2428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FFo-KN-p5G">
             <objects>
                 <viewController id="jhN-ca-Ly4" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5XV-mU-jDW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生まれた日は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="251-2o-iZW">
@@ -328,9 +317,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="つぎへ"/>
-                                <connections>
-                                    <segue destination="7sD-As-GoQ" kind="show" id="JQ1-Cf-Rga"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ログイン画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-Iv-jy4">
                                 <rect key="frame" x="173" y="20" width="225" height="73"/>
@@ -373,14 +359,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qj9-yV-XWK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481.679389312977" y="533.80281690140851"/>
+            <point key="canvasLocation" x="4622" y="389"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kJu-M2-Gyd">
             <objects>
                 <viewController id="TOz-0b-6NP" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhH-AR-QWL">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOn-Id-bj3">
@@ -388,9 +374,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="TRo-0Z-SdZ" kind="show" id="MPZ-Ll-2Gi"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-xU-zah">
                                 <rect key="frame" x="0.0" y="59" width="393" height="320"/>
@@ -410,14 +393,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmL-S3-PyA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3947.3282442748091" y="-154.22535211267606"/>
+            <point key="canvasLocation" x="5273" y="-5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fEa-UT-LJh">
             <objects>
                 <viewController id="JZT-aW-K4a" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ic-kc-40A">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-hn-UeL">
@@ -434,9 +417,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
-                                <connections>
-                                    <segue destination="lzW-p2-DMZ" kind="show" id="6vJ-7q-L9Y"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdC-Pd-WfY">
                                 <rect key="frame" x="0.0" y="59" width="393" height="320"/>
@@ -456,14 +436,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJS-AU-8sJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4714" y="1187"/>
+            <point key="canvasLocation" x="5512" y="1995"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Wc-jb-5Ks">
             <objects>
                 <viewController id="iiE-iD-Fna" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gAF-YN-RE3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRv-MO-Dal">
@@ -471,27 +451,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="おかいものをする！"/>
-                                <connections>
-                                    <segue destination="lzW-p2-DMZ" kind="show" id="dHw-Qy-6uz"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkl-wK-3Kj">
                                 <rect key="frame" x="28" y="563" width="323" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ポイントのランキングをみる"/>
-                                <connections>
-                                    <segue destination="A7f-Tb-bZM" kind="show" id="sEe-pS-JGq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02c-PP-ZBR">
                                 <rect key="frame" x="28" y="621" width="323" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いままでかったもの"/>
-                                <connections>
-                                    <segue destination="aYJ-Ey-AXy" kind="show" id="dVC-WT-ZdF"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ポイントのへや" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-CV-Mbc">
                                 <rect key="frame" x="64" y="20" width="251" height="62"/>
@@ -645,9 +616,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="7sD-As-GoQ" kind="show" id="x3P-cm-Ifl"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kCg-cr-UOK"/>
@@ -657,14 +625,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIV-9l-U0O" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3962.5954198473282" y="533.80281690140851"/>
+            <point key="canvasLocation" x="7729" y="2025"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t3T-Ez-psn">
             <objects>
                 <viewController id="qFu-QD-kNW" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4XW-pJ-zq1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="しつもん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvB-9G-Vhk">
@@ -694,9 +662,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="次へ"/>
-                                <connections>
-                                    <segue destination="zG8-Nd-XoS" kind="show" id="KIZ-KF-8pd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lme-rz-69A"/>
@@ -706,14 +671,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7So-K0-cYD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4713.740458015267" y="533.80281690140851"/>
+            <point key="canvasLocation" x="6004" y="434"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Hn-AM-GI2">
             <objects>
                 <viewController id="7sD-As-GoQ" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBC-sO-oZr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたにおすすめのほん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3i-Pu-C1t">
@@ -760,9 +725,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ほんをけんさくする"/>
-                                <connections>
-                                    <segue destination="qFu-QD-kNW" kind="show" id="kMD-Ak-qFy"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book.pages" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hLU-xX-Kxz">
                                 <rect key="frame" x="16" y="421.33333333333326" width="83" height="91"/>
@@ -818,18 +780,12 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ログアウト"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Rjt-F5-fY4"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-zz-IBr">
                                 <rect key="frame" x="237" y="117" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="☆1000"/>
-                                <connections>
-                                    <segue destination="iiE-iD-Fna" kind="show" id="UjM-kM-C2F"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JFb-Gl-p6J"/>
@@ -841,14 +797,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apz-aT-dQX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3212.9770992366412" y="533.80281690140851"/>
+            <point key="canvasLocation" x="8553" y="2025"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Go0-pD-FaW">
             <objects>
                 <viewController id="lzW-p2-DMZ" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUY-Le-ZH9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkk-Xd-fnY">
@@ -856,18 +812,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="iiE-iD-Fna" kind="show" id="wXw-ky-8AK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFe-v8-urV">
                                 <rect key="frame" x="28" y="599" width="323" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="かう"/>
-                                <connections>
-                                    <segue destination="JZT-aW-K4a" kind="show" id="PGG-Lz-udX"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book.pages" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-Od-jTy">
                                 <rect key="frame" x="16" y="241.33333333333326" width="109" height="271.00000000000006"/>
@@ -917,14 +867,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJc-0N-g2U" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3962.5954198473282" y="1186.6197183098593"/>
+            <point key="canvasLocation" x="3963" y="1968"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tl8-N1-oJ0">
             <objects>
                 <viewController id="2oR-Xc-Xbf" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kHH-dB-m6L">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBl-hZ-Y43">
@@ -942,9 +892,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="lzW-p2-DMZ" kind="show" id="QBY-hI-RLg"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6aV-AN-ikL"/>
@@ -954,14 +901,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBj-wU-TvS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5443.5114503816794" y="1186.6197183098593"/>
+            <point key="canvasLocation" x="6286" y="2026"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QSG-DV-zxJ">
             <objects>
                 <viewController id="zG8-Nd-XoS" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXc-T4-7kU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="けんさくけっか" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-T0-SdX">
@@ -984,9 +931,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="7sD-As-GoQ" kind="show" id="hkf-2s-ekO"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Eq-3q-BQY"/>
@@ -996,14 +940,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHi-Tk-hpU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5443.5114503816794" y="533.80281690140851"/>
+            <point key="canvasLocation" x="6920" y="2025"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yAD-kV-bse">
             <objects>
                 <viewController id="wWT-4g-HiG" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k40-QT-4mf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41W-lF-iXm">
@@ -1020,9 +964,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="A7f-Tb-bZM" kind="show" id="hQp-bU-IpQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VZ5-RL-cKx"/>
@@ -1032,14 +973,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCG-EX-Bgg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="1205"/>
+            <point key="canvasLocation" x="4679" y="1938"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bn9-J6-fDX">
             <objects>
                 <viewController id="uIE-vm-s4r" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oxh-mV-t9v">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aoe-Lh-6j0">
@@ -1057,9 +998,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="A7f-Tb-bZM" kind="show" id="ca3-Y2-71G"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LVt-gX-ZlP"/>
@@ -1076,7 +1014,7 @@
             <objects>
                 <viewController id="A7f-Tb-bZM" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5l-ls-Eco">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-jG-ubX">
@@ -1084,27 +1022,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ランキング"/>
-                                <connections>
-                                    <segue destination="uIE-vm-s4r" kind="show" id="mvk-fs-JRC"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIZ-Wt-fBv">
                                 <rect key="frame" x="35" y="257" width="323" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ほんよみきろくをみる"/>
-                                <connections>
-                                    <segue destination="wWT-4g-HiG" kind="show" id="2B3-dH-Ygd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I1-oy-eLX">
                                 <rect key="frame" x="35" y="477" width="323" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="iiE-iD-Fna" kind="show" id="pqf-oN-J5z"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YBV-cZ-i5V"/>
@@ -1114,14 +1043,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wN-em-ed5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2482" y="1205"/>
+            <point key="canvasLocation" x="3213" y="1893"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dBm-D4-3H3">
             <objects>
                 <viewController id="aYJ-Ey-AXy" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTj-bd-zcs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b87-65-lRh">
@@ -1129,9 +1058,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="もどる"/>
-                                <connections>
-                                    <segue destination="iiE-iD-Fna" kind="show" id="GeO-6V-6bu"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="かったもの" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-0s-5cI">
                                 <rect key="frame" x="97" y="37" width="199" height="80"/>
@@ -1155,30 +1081,1029 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6r-ho-v6W" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3212.9770992366412" y="1204.9295774647887"/>
+            <point key="canvasLocation" x="1776" y="1893"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uOE-la-lAH">
+            <objects>
+                <viewController id="ydT-hp-oIc" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJq-iM-FhE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzA-Pq-evV">
+                                <rect key="frame" x="0.0" y="469" width="393" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="🔍"/>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="🔍"/>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yfu-IN-hXC" kind="show" id="zJa-9m-X3X"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="芋虫" translatesAutoresizingMaskIntoConstraints="NO" id="IRk-gX-leG">
+                                <rect key="frame" x="38" y="157" width="316" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oe0-yz-cZ6"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I3X-d5-kai"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2e-mC-zsV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y5M-93-XLg">
+            <objects>
+                <viewController id="E00-2Q-te7" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pl3-Io-LYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUu-hx-8GN">
+                                <rect key="frame" x="16" y="339" width="361" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ユーモアの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vG2-Cd-ng4"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CFa-tI-b5q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Svc-CR-dxc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368.7022900763359" y="-1592.2535211267607"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vn7-Dc-bKT">
+            <objects>
+                <viewController id="aYJ-8p-eAk" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RnH-ik-7HS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-G6-n8C">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="4MS-jJ-n9a" kind="show" id="ywR-qw-Zn3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU2-rh-Niy">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="OZT-kQ-Tqz" kind="show" id="DNG-Bz-boc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="怖い話が読みたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-NO-Rcy">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lle-SG-jV9"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9am-f6-Gtx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wO-mT-DhB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Plt-yo-Q3A">
+            <objects>
+                <viewController id="UNg-f7-Y9e" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iIk-xM-ByY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j87-Ra-EhE">
+                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="算数の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w14-jc-FPP"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VSE-1b-UXX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zE-U1-zH2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857.25190839694653" y="-184.50704225352115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yRu-49-9ys">
+            <objects>
+                <viewController id="hrX-dO-wB5" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRR-yg-Zuy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-tG-hUg">
+                                <rect key="frame" x="45" y="409" width="148" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="5NQ-Di-W45" kind="show" id="tdt-CA-0E1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="先生になってみたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRh-cn-Uwy">
+                                <rect key="frame" x="88" y="266" width="216" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2L-AY-oJ3">
+                                <rect key="frame" x="218" y="409" width="142" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="0ly-be-1r8" kind="show" id="yZS-hS-0Mj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6rX-uw-2Ph"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yd-18-4ok"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zI6-Fh-Q19" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="msH-77-xGS">
+            <objects>
+                <viewController id="5NQ-Di-W45" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLM-gT-DHu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-Rp-2CL">
+                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="学校の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mGO-Gt-Sf2"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCh-P8-njS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bt8-zF-x0b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7U0-uG-sdQ">
+            <objects>
+                <viewController id="ikP-eX-FxT" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3BE-gM-bX8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-JE-nah">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="神話の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EUZ-nr-ayw"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="to2-U7-1iL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMj-Hp-7hE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1P9-wX-nK0">
+            <objects>
+                <viewController id="Mg4-KZ-5NH" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uVm-Zj-nDr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-Cc-QsY">
+                                <rect key="frame" x="235" y="442" width="142" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="WhU-5e-eHR" kind="show" id="8TR-xp-Rsc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-b2-tH3">
+                                <rect key="frame" x="42" y="442" width="148" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="TeV-rW-w94" kind="show" id="C4J-zt-rTC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人の人生の話が読みたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deO-Un-znB">
+                                <rect key="frame" x="72" y="227" width="269" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4FM-iV-uL5"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SNd-Vt-2bI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpP-TM-VNY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="-185"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3aT-BY-AoR">
+            <objects>
+                <viewController id="WhU-5e-eHR" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Geh-0q-EeP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkI-cO-A5h">
+                                <rect key="frame" x="16" y="336" width="361" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="知識の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ju2-WE-IGv"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P73-tS-6NM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhc-qr-YKv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Am-Nl-8Pl">
+            <objects>
+                <viewController id="0QX-J7-aAg" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfq-cD-lMg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ts-MQ-6PE">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="aBu-R8-kjW" kind="show" id="YhA-PC-3Cg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-iD-aic">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="5Nb-5e-qfP" kind="show" id="VeP-c1-OUe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全く違う世界を想像したい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsQ-Gv-LSf">
+                                <rect key="frame" x="16" y="232" width="361" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VG2-h3-nqs"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fij-XQ-aES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mC-g9-NBw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.152671755725194" y="-1592.2535211267607"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wJh-W2-6Ul">
+            <objects>
+                <viewController id="j2j-br-NBA" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="otn-1R-tA0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjn-eI-D2I">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="ikP-eX-FxT" kind="show" id="tlm-ND-Wmz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDH-dU-lnS">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="oPT-hG-cnk" kind="show" id="Sh3-Vu-CsT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="神様に興味がある？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF4-lE-Usy">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P4F-Je-dPm"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EqP-BD-j03"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVB-y1-Tc0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4dL-TJ-eUj">
+            <objects>
+                <viewController id="il3-1Z-d5p" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N76-1G-xXR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIW-S9-VXi">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="恐怖の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qzC-9e-0Lf"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D3h-eR-Ggx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3P-Mm-ygl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qdc-t8-ZNx">
+            <objects>
+                <viewController id="yfu-IN-hXC" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exh-uT-keQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b48-RV-pMN">
+                                <rect key="frame" x="235" y="381" width="142" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="0QX-J7-aAg" kind="show" id="utW-N1-rKN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="フィクションとノンフィクションだったらフィクションが読みたい" lineBreakMode="tailTruncation" numberOfLines="11" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-gC-acd">
+                                <rect key="frame" x="29" y="221" width="334" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPc-5S-qWe">
+                                <rect key="frame" x="41" y="381" width="148" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="rDn-Kc-aOm" kind="show" id="StY-Dd-XXW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n0N-L5-Zfs"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UCj-NS-xlB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoS-Hl-K7l" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NEW-H9-xeI">
+            <objects>
+                <viewController id="TeV-rW-w94" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iwr-8z-4Cm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-Aq-5IY">
+                                <rect key="frame" x="16" y="334" width="361" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="伝記の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ALI-ye-4Gl"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G6C-QO-x7D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLx-Dy-KL8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Vu-5K-5kB">
+            <objects>
+                <viewController id="OZT-kQ-Tqz" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n4p-3G-nUA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nw-uE-xpt">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="1lr-C5-7F4" kind="show" id="JEh-cH-xd3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXs-pz-V8k">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="j2j-br-NBA" kind="show" id="Fit-tl-yvL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冒険に出かけたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF7-Pv-dxa">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mtn-M2-xFy"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XwD-sV-DDA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXm-I3-dLo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e6D-dS-Ik8">
+            <objects>
+                <viewController id="rDn-Kc-aOm" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="so0-hU-rcm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYX-eI-eCG">
+                                <rect key="frame" x="40" y="351" width="148" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="UNg-f7-Y9e" kind="show" id="aMc-fQ-mf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-BG-vQr">
+                                <rect key="frame" x="235" y="350" width="142" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="Mg4-KZ-5NH" kind="show" id="pe6-ul-XQX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数にまつわる話が読みたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dk-ok-bN0">
+                                <rect key="frame" x="93" y="201" width="207" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PuM-oT-da2"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Ig-DE-qeB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dg-nS-NK1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857.25190839694653" y="-904.22535211267609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WMZ-Xl-yDT">
+            <objects>
+                <viewController id="Q5v-yX-x1W" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWf-p7-NFV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-Kk-CMQ">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ファンタジーの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4vO-UZ-JdX"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e3u-q1-iFu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RF6-vt-65y" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sJz-Dd-iR1">
+            <objects>
+                <viewController id="0ly-be-1r8" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bzk-Fg-uXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv9-bd-gvb">
+                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="友達の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yCQ-Tj-X2c"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lie-gL-xz1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfe-U2-euH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e2W-Hb-0og">
+            <objects>
+                <viewController id="4MS-jJ-n9a" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5h-1F-IoX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-T8-KkG">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="ElI-sn-lgF" kind="show" id="PUx-IR-K5O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-Z6-2Dq">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="il3-1Z-d5p" kind="show" id="F6M-2x-ejK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パズルが好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIZ-UW-SQ3">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BA2-72-GZB"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wgg-dF-27M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8q9-Il-2cN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eWb-D1-zO6">
+            <objects>
+                <viewController id="oPT-hG-cnk" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TlR-jr-VXY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-Dy-bg0">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="不思議の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oaz-Of-G9t"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IJZ-BW-w4I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voz-8C-7L6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PzK-0E-Klu">
+            <objects>
+                <viewController id="1lr-C5-7F4" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPt-Vt-8M7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw4-PY-Xgv">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="Q5v-yX-x1W" kind="show" id="Dkr-e3-sPd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpt-MV-Bx7">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="kVw-tI-LV2" kind="show" id="jHF-8K-p62"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="魔法が使いたい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iq-W4-Ys0">
+                                <rect key="frame" x="116" y="239" width="184" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ORd-QD-Keq"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dP1-fM-gFf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="382-J5-ckk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915" y="-1592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kiv-x8-bZe">
+            <objects>
+                <viewController id="ha1-Ky-s94" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sCz-q1-mKN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwn-kk-DpB">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="動物の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="InN-ND-xgB"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a20-cg-AVY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hl-m9-WsJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oLw-rS-bmh">
+            <objects>
+                <viewController id="M9e-kk-P61" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUF-Wa-r7m">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-Yr-77j">
+                                <rect key="frame" x="37" y="356" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="ha1-Ky-s94" kind="show" id="uBZ-mH-Ycb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo0-um-6DD">
+                                <rect key="frame" x="213" y="356" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="b80-Ue-eeq" kind="show" id="dqB-V3-pji"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="動物を見るのが好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgE-Z8-Rex">
+                                <rect key="frame" x="86" y="230" width="220" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="14k-MB-5UP"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ldg-sv-5FX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIz-du-HtQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.8854961832061" y="-185.21126760563382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h2V-sC-EJj">
+            <objects>
+                <viewController id="Krp-H1-JdJ" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87H-uX-R8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-G2-2lD">
+                                <rect key="frame" x="39" y="346" width="148" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="mWN-0x-xt5" kind="show" id="JIc-2q-ibQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkA-WF-gfe">
+                                <rect key="frame" x="235" y="345" width="142" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="hrX-dO-wB5" kind="show" id="zFx-sj-k9f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="運動するのが何より好き？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81I-nJ-ZF4">
+                                <rect key="frame" x="66" y="166" width="261" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rwl-s2-Pqg"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nxr-rT-sPi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhN-vK-sVa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.152671755725194" y="-185.21126760563382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kSt-7s-qTn">
+            <objects>
+                <viewController id="kVw-tI-LV2" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JJL-cD-yoA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-z0-wCe">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="冒険の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0QB-Pt-sve"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5BC-IB-WCX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBm-gi-ytP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cE0-pX-pIX">
+            <objects>
+                <viewController id="b80-Ue-eeq" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3WE-Co-mDe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScU-hp-N0i">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="家族の扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Agd-Hg-wYz"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qwG-qC-X8a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJI-je-Y2H" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="-201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9P9-Ej-RCA">
+            <objects>
+                <viewController id="ElI-sn-lgF" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1N-Ik-jGa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYr-9P-sxe">
+                                <rect key="frame" x="122" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ミステリーの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VGx-aS-pOU"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aqK-ij-TCd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgM-sm-9Ia" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UQQ-4L-Zkf">
+            <objects>
+                <viewController id="mWN-0x-xt5" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EXI-N6-meG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-Ef-6Sy">
+                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="スポーツの扉"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xFb-Z6-Jt5"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1IN-hF-ZGa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2f2-S5-fLD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jiz-lg-wtu">
+            <objects>
+                <viewController id="5Nb-5e-qfP" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DOh-TI-dC6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学校に行くのが楽しみ？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-4A-EJO">
+                                <rect key="frame" x="100" y="172" width="259" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-1B-w1B">
+                                <rect key="frame" x="41" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="Krp-H1-JdJ" kind="show" id="aUL-gu-8pT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qck-W3-S8Q">
+                                <rect key="frame" x="221" y="344" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="M9e-kk-P61" kind="show" id="GKp-AD-noY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Qd-Xd-mF3"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rfc-n3-9C6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJe-Jg-wf2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bHz-zi-CuL">
+            <objects>
+                <viewController id="aBu-R8-kjW" customClass="ViewController" customModule="PiBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6Y-P4-qjq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apF-av-0Yc">
+                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="はい"/>
+                                <connections>
+                                    <segue destination="E00-2Q-te7" kind="show" id="ocF-VV-2Ly"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-eT-JCx">
+                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
+                                <connections>
+                                    <segue destination="aYJ-8p-eAk" kind="show" id="VyW-v1-aCj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="笑いたい気分？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKJ-Pr-zTt">
+                                <rect key="frame" x="118" y="232" width="157" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lMU-BI-Jhv"/>
+                        <color key="backgroundColor" name="Backgroundcolor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PEe-V9-P0n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuL-ht-PZb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.8854961832061" y="-1592.2535211267607"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="sEe-pS-JGq"/>
-        <segue reference="dHw-Qy-6uz"/>
-        <segue reference="x3P-cm-Ifl"/>
-        <segue reference="UjM-kM-C2F"/>
-        <segue reference="hl3-Yj-pFy"/>
-        <segue reference="Rjt-F5-fY4"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="book.pages" catalog="system" width="107" height="128"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="character.book.closed.mr" catalog="system" width="115" height="128"/>
         <image name="芋虫" width="533.33331298828125" height="298.66665649414062"/>
+        <namedColor name="Backgroundcolor">
+            <color red="0.81759242779999997" green="0.78910253649999995" blue="0.69860088229999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
