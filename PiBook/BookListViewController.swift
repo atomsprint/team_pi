@@ -4,26 +4,23 @@
 //
 //  Created by Kanta on 2026/03/16.
 //
-
 import UIKit
 
 class BookListViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var authorLabel: UILabel?
+    @IBOutlet weak var publisherLabel: UILabel? // 💡 出版社ラベルを追加
+
+    var book: Book?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let b = book {
+            titleLabel?.text = "タイトル：\(b.title)"
+            authorLabel?.text = "作者：\(b.author)"
+            publisherLabel?.text = "出版社：\(b.publisher)" // 💡 表示させる
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
