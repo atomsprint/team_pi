@@ -2199,7 +2199,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-vr-p0q">
-                                <rect key="frame" x="16" y="464" width="361" height="167"/>
+                                <rect key="frame" x="16" y="464" width="361" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -2219,6 +2219,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCy-yr-Kgd">
+                                <rect key="frame" x="16" y="634" width="361" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TBO-ce-E6K"/>
                         <color key="backgroundColor" name="Backgroundcolor"/>
@@ -2227,6 +2234,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="o7m-mi-QQX" id="NcR-nD-wlp"/>
                         <outlet property="publisherLabel" destination="cvN-vr-p0q" id="iyn-nr-OEu"/>
+                        <outlet property="summaryLabel" destination="hCy-yr-Kgd" id="4ht-wn-PIx"/>
                         <outlet property="titleLabel" destination="mfG-Wi-TTs" id="W6O-nh-tbZ"/>
                     </connections>
                 </viewController>
