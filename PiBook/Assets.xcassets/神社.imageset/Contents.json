@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "神社.png",
+      "filename" : "神様.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "神社 1.png",
+      "filename" : "神様 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "神社 2.png",
+      "filename" : "神様 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
