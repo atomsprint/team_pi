@@ -193,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j87-Ra-EhE">
-                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <rect key="frame" x="109" y="727" width="212" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="算数の扉"/>
@@ -201,6 +201,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="算数の扉" id="ffa-au-2nW"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉算数" translatesAutoresizingMaskIntoConstraints="NO" id="Rl3-ga-9Qb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w14-jc-FPP"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zE-U1-zH2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-857.25190839694653" y="-184.50704225352115"/>
+            <point key="canvasLocation" x="-857.97101449275374" y="-184.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yRu-49-9ys">
@@ -220,7 +225,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-tG-hUg">
-                                <rect key="frame" x="45" y="409" width="148" height="91"/>
+                                <rect key="frame" x="20" y="391" width="177" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -236,7 +241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2L-AY-oJ3">
-                                <rect key="frame" x="218" y="409" width="142" height="91"/>
+                                <rect key="frame" x="222" y="391" width="172" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -244,6 +249,11 @@
                                     <segue destination="0ly-be-1r8" kind="show" id="yZS-hS-0Mj"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="先生になってみたい" translatesAutoresizingMaskIntoConstraints="NO" id="LrM-c5-3j4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80355108870000003" blue="0.79648773250000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6rX-uw-2Ph"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zI6-Fh-Q19" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="487"/>
+            <point key="canvasLocation" x="2102.898550724638" y="486.83035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="msH-77-xGS">
@@ -263,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-Rp-2CL">
-                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <rect key="frame" x="100" y="733" width="220" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="学校の扉"/>
@@ -271,6 +281,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="学校の扉" id="4Dp-fA-74y"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉学校" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-i1-v7X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mGO-Gt-Sf2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bt8-zF-x0b" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="570"/>
+            <point key="canvasLocation" x="1437.68115942029" y="569.86607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7U0-uG-sdQ">
@@ -290,7 +305,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-JE-nah">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="101" y="730" width="213" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="神話の扉"/>
@@ -298,6 +313,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="神話・昔話の扉" id="ZVc-ei-q9u"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉神話" translatesAutoresizingMaskIntoConstraints="NO" id="hDQ-XD-PQu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EUZ-nr-ayw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMj-Hp-7hE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2913.740458015267" y="-201.40845070422537"/>
+            <point key="canvasLocation" x="2913.04347826087" y="-201.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1P9-wX-nK0">
@@ -324,7 +344,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-b2-tH3">
-                                <rect key="frame" x="20" y="403" width="148" height="91"/>
+                                <rect key="frame" x="20" y="403" width="171" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -333,7 +353,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-Cc-QsY">
-                                <rect key="frame" x="227" y="403" width="142" height="91"/>
+                                <rect key="frame" x="215" y="403" width="179" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -341,6 +361,11 @@
                                     <segue destination="WhU-5e-eHR" kind="show" id="8TR-xp-Rsc"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="人の人生" translatesAutoresizingMaskIntoConstraints="NO" id="OrK-Bt-asq">
+                                <rect key="frame" x="-1" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80355108870000003" blue="0.79648773250000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4FM-iV-uL5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -360,7 +385,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkI-cO-A5h">
-                                <rect key="frame" x="16" y="336" width="361" height="111"/>
+                                <rect key="frame" x="116" y="724" width="205" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="知識の扉"/>
@@ -368,6 +393,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="知識の扉" id="mYE-C4-Ley"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉知識" translatesAutoresizingMaskIntoConstraints="NO" id="1S9-1v-Zfm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ju2-WE-IGv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -376,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhc-qr-YKv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1527" y="570"/>
+            <point key="canvasLocation" x="-1527.536231884058" y="569.86607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Am-Nl-8Pl">
@@ -428,7 +458,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjn-eI-D2I">
-                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <rect key="frame" x="20" y="389" width="172" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -437,7 +467,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDH-dU-lnS">
-                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <rect key="frame" x="215" y="389" width="179" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -452,6 +482,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神社" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-ff-yrp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9916992188" green="0.9545898438" blue="0.7817382812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P4F-Je-dPm"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -460,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVB-y1-Tc0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3688" y="487"/>
+            <point key="canvasLocation" x="3686.9565217391305" y="486.83035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4dL-TJ-eUj">
@@ -551,7 +586,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-Aq-5IY">
-                                <rect key="frame" x="16" y="334" width="361" height="115"/>
+                                <rect key="frame" x="116" y="721" width="199" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="伝記の扉"/>
@@ -559,6 +594,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="伝記・歴史の扉" id="zOB-0E-QRH"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉伝記歴史" translatesAutoresizingMaskIntoConstraints="NO" id="87L-oq-uUI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ALI-ye-4Gl"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLx-Dy-KL8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-857" y="570"/>
+            <point key="canvasLocation" x="-857.97101449275374" y="569.86607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Vu-5K-5kB">
@@ -667,7 +707,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-Kk-CMQ">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="122" y="727" width="210" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ファンタジーの扉"/>
@@ -675,6 +715,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="ファンタジーの扉" id="Pab-4C-skH"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ファンタジー" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-WS-7BU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4vO-UZ-JdX"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -694,7 +739,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv9-bd-gvb">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="120" y="729" width="204" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="友達の扉"/>
@@ -702,6 +747,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="友達の扉" id="60u-qd-DLx"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉友達" translatesAutoresizingMaskIntoConstraints="NO" id="oX5-To-nPg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yCQ-Tj-X2c"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -710,7 +760,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfe-U2-euH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="570"/>
+            <point key="canvasLocation" x="663.768115942029" y="569.86607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e2W-Hb-0og">
@@ -721,7 +771,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-T8-KkG">
-                                <rect key="frame" x="37" y="345" width="149" height="92"/>
+                                <rect key="frame" x="20" y="425" width="172" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -730,7 +780,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-Z6-2Dq">
-                                <rect key="frame" x="221" y="345" width="156" height="92"/>
+                                <rect key="frame" x="219" y="425" width="175" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -745,6 +795,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="パズル" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-9C-5YW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61746375990000002" green="0.91581627300000001" blue="0.4607121273" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BA2-72-GZB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -764,7 +819,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-Dy-bg0">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="102" y="727" width="205" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="不思議の扉"/>
@@ -772,6 +827,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="不思議の扉" id="axt-hW-BLy"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉不思議" translatesAutoresizingMaskIntoConstraints="NO" id="w0S-Op-eyz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oaz-Of-G9t"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -780,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voz-8C-7L6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3687.7862595419847" y="-201.40845070422537"/>
+            <point key="canvasLocation" x="3686.9565217391305" y="-201.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PzK-0E-Klu">
@@ -832,7 +892,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwn-kk-DpB">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="116" y="722" width="218" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="動物の扉"/>
@@ -840,6 +900,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="動物・昆虫の扉" id="Hkg-qe-CIm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉動物植物" translatesAutoresizingMaskIntoConstraints="NO" id="9H9-hf-YmT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="InN-ND-xgB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -848,7 +913,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hl-m9-WsJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2104.5801526717555" y="-201.40845070422537"/>
+            <point key="canvasLocation" x="2102.898550724638" y="-201.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oLw-rS-bmh">
@@ -859,7 +924,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-Yr-77j">
-                                <rect key="frame" x="37" y="356" width="149" height="92"/>
+                                <rect key="frame" x="0.0" y="382" width="180" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -868,7 +933,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo0-um-6DD">
-                                <rect key="frame" x="213" y="356" width="156" height="92"/>
+                                <rect key="frame" x="211" y="382" width="183" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -883,6 +948,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="動物や自然" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-02-Gwl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="14k-MB-5UP"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -891,7 +961,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIz-du-HtQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664.8854961832061" y="-185.21126760563382"/>
+            <point key="canvasLocation" x="663.768115942029" y="-185.49107142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h2V-sC-EJj">
@@ -902,7 +972,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-G2-2lD">
-                                <rect key="frame" x="39" y="346" width="148" height="91"/>
+                                <rect key="frame" x="0.0" y="390" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="はい"/>
@@ -911,7 +981,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkA-WF-gfe">
-                                <rect key="frame" x="235" y="345" width="142" height="91"/>
+                                <rect key="frame" x="215" y="390" width="179" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="いいえ"/>
@@ -926,6 +996,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="運動修正版" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-LC-8ax">
+                                <rect key="frame" x="-7" y="0.0" width="421" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rwl-s2-Pqg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -934,7 +1009,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhN-vK-sVa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80.152671755725194" y="-185.21126760563382"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="-185.49107142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kSt-7s-qTn">
@@ -945,7 +1020,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2A-z0-wCe">
-                                <rect key="frame" x="0.0" y="345" width="393" height="92"/>
+                                <rect key="frame" x="102" y="719" width="221" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="冒険の扉"/>
@@ -953,6 +1028,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="冒険の扉" id="EK8-nO-JhD"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉冒険" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-x3-imP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0QB-Pt-sve"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -961,7 +1041,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBm-gi-ytP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3687.7862595419847" y="-904.22535211267609"/>
+            <point key="canvasLocation" x="3686.9565217391305" y="-904.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cE0-pX-pIX">
@@ -972,7 +1052,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScU-hp-N0i">
-                                <rect key="frame" x="16" y="345" width="361" height="92"/>
+                                <rect key="frame" x="112" y="717" width="208" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="家族の扉"/>
@@ -980,6 +1060,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="家族の扉" id="53H-14-FqA"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉家族" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-dN-3I6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Agd-Hg-wYz"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -988,7 +1073,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJI-je-Y2H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438.9312977099237" y="-201.40845070422537"/>
+            <point key="canvasLocation" x="1437.68115942029" y="-201.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9P9-Ej-RCA">
@@ -1031,7 +1116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-Ef-6Sy">
-                                <rect key="frame" x="16" y="341" width="361" height="101"/>
+                                <rect key="frame" x="104" y="721" width="219" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="スポーツの扉"/>
@@ -1039,6 +1124,11 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="スポーツの扉" id="Sqa-P4-K2K"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉スポーツ" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-sH-aHI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xFb-Z6-Jt5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1047,7 +1137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2f2-S5-fLD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="570"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="569.86607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jiz-lg-wtu">
@@ -1179,6 +1269,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="リスト" translatesAutoresizingMaskIntoConstraints="NO" id="WSc-RS-em8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9916992188" green="0.9545898438" blue="0.7817382812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5zJ-vG-dOf"/>
                         <color key="backgroundColor" name="Backgroundcolor"/>
@@ -1362,23 +1457,42 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ffa-au-2nW"/>
+        <segue reference="4Dp-fA-74y"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="パズル" width="360" height="640"/>
+        <image name="ファンタジー" width="360" height="640"/>
+        <image name="リスト" width="360" height="640"/>
+        <image name="人の人生" width="360" height="640"/>
+        <image name="先生になってみたい" width="360" height="640"/>
         <image name="全く違う世界" width="360" height="640"/>
         <image name="冒険" width="360" height="640"/>
+        <image name="動物や自然" width="360" height="640"/>
         <image name="名作" width="360" height="640"/>
         <image name="学校" width="360" height="640"/>
         <image name="怖い話" width="360" height="640"/>
+        <image name="扉スポーツ" width="360" height="640"/>
         <image name="扉ミステリー" width="360" height="640"/>
         <image name="扉ユーモア" width="360" height="640"/>
+        <image name="扉不思議" width="360" height="640"/>
+        <image name="扉伝記歴史" width="360" height="640"/>
+        <image name="扉冒険" width="360" height="640"/>
+        <image name="扉動物植物" width="360" height="640"/>
+        <image name="扉友達" width="360" height="640"/>
+        <image name="扉学校" width="360" height="640"/>
+        <image name="扉家族" width="360" height="640"/>
         <image name="扉恐怖" width="360" height="640"/>
         <image name="扉文学" width="360" height="640"/>
+        <image name="扉知識" width="360" height="640"/>
+        <image name="扉神話" width="360" height="640"/>
+        <image name="扉算数" width="360" height="640"/>
         <image name="数" width="360" height="640"/>
         <image name="本当にあった話" width="360" height="640"/>
+        <image name="神社" width="360" height="640"/>
         <image name="笑いたい気分" width="360" height="640"/>
         <image name="表紙最新" width="360" height="640"/>
         <image name="表紙次" width="360" height="640"/>
+        <image name="運動修正版" width="360" height="640"/>
         <image name="魔法" width="360" height="640"/>
         <namedColor name="Backgroundcolor">
             <color red="0.81800001859664917" green="0.78899997472763062" blue="0.69900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
