@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "71Ub2hEtaTL._SY522_ 1.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "71Ub2hEtaTL._SY522_ 2.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "71Ub2hEtaTL._SY522_.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
