@@ -28,7 +28,7 @@
                                     <segue destination="ydT-hp-oIc" kind="show" id="P0Z-Vd-enR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙最新" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙最新 2" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -49,7 +49,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5i6-QV-NV0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zKg-vu-hkO">
-                        <rect key="frame" x="0.0" y="96" width="414" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1490,7 +1489,7 @@
         <image name="本当にあった話" width="360" height="640"/>
         <image name="神社" width="360" height="640"/>
         <image name="笑いたい気分" width="360" height="640"/>
-        <image name="表紙最新" width="360" height="640"/>
+        <image name="表紙最新 2" width="360" height="640"/>
         <image name="表紙次" width="360" height="640"/>
         <image name="運動修正版" width="360" height="640"/>
         <image name="魔法" width="360" height="640"/>
@@ -1501,10 +1500,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.55294117647058827" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.79607843140000001" green="0.18823529410000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
