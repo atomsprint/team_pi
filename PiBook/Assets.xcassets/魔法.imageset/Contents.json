@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "魔法.png",
+      "filename" : "13.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "魔法 1.png",
+      "filename" : "13 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "魔法 2.png",
+      "filename" : "13 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
