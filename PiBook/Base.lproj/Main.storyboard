@@ -28,7 +28,7 @@
                                     <segue destination="ydT-hp-oIc" kind="show" id="P0Z-Vd-enR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙最新 2" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙最新" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1489,7 +1489,7 @@
         <image name="本当にあった話" width="360" height="640"/>
         <image name="神社" width="360" height="640"/>
         <image name="笑いたい気分" width="360" height="640"/>
-        <image name="表紙最新 2" width="360" height="640"/>
+        <image name="表紙最新" width="360" height="640"/>
         <image name="表紙次" width="360" height="640"/>
         <image name="運動修正版" width="360" height="640"/>
         <image name="魔法" width="360" height="640"/>
