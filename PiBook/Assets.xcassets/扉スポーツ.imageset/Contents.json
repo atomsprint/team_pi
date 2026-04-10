@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "扉スポーツ.png",
+      "filename" : "扉スポーツ 3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "扉スポーツ 1.png",
+      "filename" : "扉スポーツ 4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "扉スポーツ 2.png",
+      "filename" : "扉スポーツ.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
