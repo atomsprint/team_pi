@@ -28,7 +28,7 @@
                                     <segue destination="ydT-hp-oIc" kind="show" id="P0Z-Vd-enR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙最新" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙４１９" translatesAutoresizingMaskIntoConstraints="NO" id="0bQ-Vk-8Ms">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -49,6 +49,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5i6-QV-NV0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zKg-vu-hkO">
+                        <rect key="frame" x="0.0" y="96" width="414" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -88,7 +89,7 @@
                                     <segue destination="NZY-fC-RtG" kind="show" id="9Pj-Mc-LNs"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙次" translatesAutoresizingMaskIntoConstraints="NO" id="y0S-3O-dx5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="表紙次４１９" translatesAutoresizingMaskIntoConstraints="NO" id="y0S-3O-dx5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -714,7 +715,7 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="ファンタジーの扉" id="Pab-4C-skH"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ファンタジー最新" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-WS-7BU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ファンタジー" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-WS-7BU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -794,7 +795,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="パズル" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-9C-5YW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="パズル" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-9C-5YW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61746375990000002" green="0.91581627300000001" blue="0.4607121273" alpha="1" colorSpace="calibratedRGB"/>
@@ -1123,7 +1124,7 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="スポーツの扉" id="Sqa-P4-K2K"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉スポーツ" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-sH-aHI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉スポーツ" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-sH-aHI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1317,7 +1318,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-yD-eVK">
-                                <rect key="frame" x="42" y="669" width="315" height="126"/>
+                                <rect key="frame" x="96" y="669" width="221" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="次へ"/>
@@ -1325,9 +1326,13 @@
                                     <segue destination="lxB-O9-bGm" kind="show" identifier="toBookList" id="HHS-3w-Kky"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="本タイトル" translatesAutoresizingMaskIntoConstraints="NO" id="J6T-D2-JRA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TBO-ce-E6K"/>
-                        <color key="backgroundColor" name="Backgroundcolor"/>
+                        <color key="backgroundColor" red="0.9916992188" green="0.9545898438" blue="0.7817382812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Ob-11-ugV"/>
                     <connections>
@@ -1338,7 +1343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rW4-8e-u40" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3754.9618320610684" y="1218.3098591549297"/>
+            <point key="canvasLocation" x="3753.6231884057975" y="1218.0803571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="exs-LZ-deg">
@@ -1439,9 +1444,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="本画像背景" translatesAutoresizingMaskIntoConstraints="NO" id="4kE-54-dHe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7QR-ZS-4nZ"/>
-                        <color key="backgroundColor" name="Backgroundcolor"/>
+                        <color key="backgroundColor" red="0.9916992188" green="0.9545898438" blue="0.7817382812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="wVZ-ye-hG5"/>
                     <connections>
@@ -1452,15 +1461,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oB6-SL-pZ6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4513.740458015267" y="1217.605633802817"/>
+            <point key="canvasLocation" x="4513.04347826087" y="1217.4107142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Sqa-P4-K2K"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="パズル" width="360" height="640"/>
-        <image name="ファンタジー最新" width="360" height="640"/>
+        <image name="パズル" width="360" height="640"/>
+        <image name="ファンタジー" width="720" height="1280"/>
         <image name="リスト" width="360" height="640"/>
         <image name="人の人生" width="360" height="640"/>
         <image name="先生になってみたい" width="360" height="640"/>
@@ -1471,7 +1480,7 @@
         <image name="名作" width="360" height="640"/>
         <image name="学校" width="360" height="640"/>
         <image name="怖い話" width="360" height="640"/>
-        <image name="扉スポーツ" width="360" height="640"/>
+        <image name="扉スポーツ" width="360" height="640"/>
         <image name="扉ミステリー" width="360" height="640"/>
         <image name="扉ユーモア" width="360" height="640"/>
         <image name="扉不思議" width="360" height="640"/>
@@ -1486,11 +1495,13 @@
         <image name="扉神話" width="360" height="640"/>
         <image name="扉算数" width="360" height="640"/>
         <image name="数" width="360" height="640"/>
+        <image name="本タイトル" width="360" height="640"/>
         <image name="本当にあった話" width="360" height="640"/>
+        <image name="本画像背景" width="360" height="640"/>
         <image name="神社" width="360" height="640"/>
         <image name="笑いたい気分" width="360" height="640"/>
-        <image name="表紙最新" width="360" height="640"/>
-        <image name="表紙次" width="360" height="640"/>
+        <image name="表紙次４１９" width="360" height="640"/>
+        <image name="表紙４１９" width="360" height="640"/>
         <image name="運動修正版" width="360" height="640"/>
         <image name="魔法" width="360" height="640"/>
         <namedColor name="Backgroundcolor">
@@ -1500,10 +1511,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.55294117647058827" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.79607843140000001" green="0.18823529410000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
