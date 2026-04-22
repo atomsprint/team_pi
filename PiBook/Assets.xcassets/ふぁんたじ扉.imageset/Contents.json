@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ファンタジー 3.png",
+      "filename" : "ファンタジー 5.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ファンタジー 4.png",
+      "filename" : "ファンタジー 3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ファンタジー 2.png",
+      "filename" : "ファンタジー 4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "パズル 3.png",
+      "filename" : "パズル 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "パズル 4.png",
+      "filename" : "パズル 3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "パズル 1.png",
+      "filename" : "パズル 4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

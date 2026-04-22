@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "スポーツ 3.png",
+      "filename" : "スポーツ 3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "スポーツ 4.png",
+      "filename" : "スポーツ 4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "スポーツ.png",
+      "filename" : "スポーツ.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
