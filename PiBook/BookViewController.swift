@@ -42,12 +42,12 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toBookInfo", sender: indexPath)
+        performSegue(withIdentifier: "toBookList", sender: indexPath)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toBookInfo",
-           let infoVC = segue.destination as? BookInfoViewController,
+        if segue.identifier == "toBookList",
+           let infoVC = segue.destination as? BookListViewController,
            let indexPath = sender as? IndexPath {
             infoVC.book = displayBooks[indexPath.row]
         }
