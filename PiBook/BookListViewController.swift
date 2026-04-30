@@ -4,6 +4,7 @@
 //
 //  Created by Kanta on 2026/03/16.
 //
+
 import UIKit
 
 class BookListViewController: UIViewController {
@@ -40,8 +41,14 @@ class BookListViewController: UIViewController {
         summaryLabel.text = b.summary
         
         let imageName = b.title.trimmingCharacters(in: .whitespacesAndNewlines)
-        if let image = UIImage(named: imageName) {
-            bookImageView.image = image
+        
+        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileURL = documentURL.appendingPathComponent("\(imageName).jpg")
+        
+        if let savedImage = UIImage(contentsOfFile: fileURL.path) {
+            bookImageView.image = savedImage
+        } else if let assetImage = UIImage(named: imageName) {
+            bookImageView.image = assetImage
         } else {
             bookImageView.image = UIImage(systemName: "book.closed")
         }

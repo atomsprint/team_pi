@@ -11,21 +11,27 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
 
     var selectedGenre: String = ""
-    var allBooks = CSVLoader.load()
     var displayBooks: [Book] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadAndFilterBooks()
+    }
+
+    private func loadAndFilterBooks() {
+        let allBooks = CSVLoader.load()
         displayBooks = allBooks.filter { b in
             b.category1 == selectedGenre ||
             b.category2 == selectedGenre ||
             b.category3 == selectedGenre ||
             b.category4 == selectedGenre
         }
-
-        tableView.dataSource = self
-        tableView.delegate = self
         tableView.reloadData()
     }
 

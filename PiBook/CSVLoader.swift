@@ -11,14 +11,23 @@ class CSVLoader {
     
     static func load() -> [Book] {
         var books = [Book]()
+        let fileName = "books.csv"
+        let fileManager = FileManager.default
+        let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+        guard let documentURL = urls.first else { return books }
+        let fileURL = documentURL.appendingPathComponent(fileName)
         
-        guard let path = Bundle.main.path(forResource: "books", ofType: "csv") else {
-            print("CSV file not found")
-            return books
-        }
+        var csvString = ""
         
         do {
-            let csvString = try String(contentsOfFile: path, encoding: .utf8)
+            if fileManager.fileExists(atPath: fileURL.path) {
+                csvString = try String(contentsOf: fileURL, encoding: .utf8)
+            } else if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
+                csvString = try String(contentsOfFile: bundlePath, encoding: .utf8)
+            } else {
+                return books
+            }
+            
             let lines = csvString.components(separatedBy: .newlines)
             
             for line in lines {
@@ -30,8 +39,6 @@ class CSVLoader {
                 
                 if columns.count >= 15 {
                     books.append(Book(row: columns))
-                } else {
-                    print("列数不足:", columns.count, columns)
                 }
             }
             
@@ -46,7 +53,6 @@ class CSVLoader {
         var result: [String] = []
         var current = ""
         var insideQuotes = false
-        
         for char in line {
             if char == "\"" {
                 insideQuotes.toggle()
@@ -57,7 +63,6 @@ class CSVLoader {
                 current.append(char)
             }
         }
-        
         result.append(current.trimmingCharacters(in: .whitespacesAndNewlines))
         return result
     }
