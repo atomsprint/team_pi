@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "扉恐怖.png",
+      "filename" : "19.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "扉恐怖 1.png",
+      "filename" : "19 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "扉恐怖 2.png",
+      "filename" : "19 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
