@@ -1519,7 +1519,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-ic-ZRc">
-                                <rect key="frame" x="0.0" y="550" width="166" height="162"/>
+                                <rect key="frame" x="11" y="600" width="166" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="画像を選択する"/>
@@ -1528,13 +1528,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-gd-0c5">
-                                <rect key="frame" x="20" y="752" width="358" height="28"/>
+                                <rect key="frame" x="197" y="602" width="194" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ジャンルを選ぶ"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-RS-7OU">
-                                <rect key="frame" x="20" y="800" width="358" height="28"/>
+                                <rect key="frame" x="197" y="686" width="182" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="この本を登録する"/>
@@ -1578,6 +1578,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景本登録" translatesAutoresizingMaskIntoConstraints="NO" id="Hz3-oV-RVb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rwH-J1-2XF"/>
                         <color key="backgroundColor" name="Backgroundcolor"/>
@@ -1620,6 +1625,7 @@
         <image name="扉算数" width="360" height="640"/>
         <image name="神様" width="360" height="640"/>
         <image name="背景本リスト" width="360" height="640"/>
+        <image name="背景本登録" width="360" height="640"/>
         <image name="表紙１" width="360" height="640"/>
         <image name="表紙２" width="360" height="640"/>
         <image name="質問パズル" width="360" height="640"/>
