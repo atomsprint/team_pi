@@ -4,6 +4,43 @@
 //
 //  Created by Kanta on 2026/03/16.
 //
+import SwiftUI
+import AudioToolbox // 💡 4桁の音を鳴らすために必須
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            // 💡 ここからボタンのコード
+            Button(action: {
+                // ① 4桁の数字で音を鳴らす（1104番 = カチッ）
+                AudioServicesPlaySystemSound(1104)
+                
+
+                
+                // ② バイブレーション（触覚フィードバック）を発生させる
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+            }) {
+                Text("ボタンを押す")
+                    .font(.headline)
+                    .padding()
+                    .frame(width: 200, height: 50)
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            // 💡 ここまでボタンのコード
+        }
+    }
+}
+
+// プレビュー用（無視して大丈夫です）
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
 
 import UIKit
 
@@ -24,6 +61,15 @@ class BookListViewController: UIViewController {
     }
 
     @IBAction func backToListButtonTapped(_ sender: Any) {
+   
+
+        AudioServicesPlaySystemSound(1104)
+            
+
+        let generator = UIImpactFeedbackGenerator(style: .rigid)
+        generator.impactOccurred()
+        
+
         if let nav = self.navigationController {
             nav.popViewController(animated: true)
         } else {
@@ -32,6 +78,12 @@ class BookListViewController: UIViewController {
     }
 
     @IBAction func backToHomeButtonTapped(_ sender: Any) {
+        AudioServicesPlaySystemSound(1104)
+            
+  
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
         if let nav = self.navigationController {
             let stack = nav.viewControllers
             if stack.count >= 2 {
@@ -50,6 +102,12 @@ class BookListViewController: UIViewController {
     }
 
     @IBAction func deleteBookButtonTapped(_ sender: Any) {
+        AudioServicesPlaySystemSound(1104)
+            
+  
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
         guard let targetTitle = book?.title else { return }
         let fileManager = FileManager.default
         let documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -99,5 +157,39 @@ class BookListViewController: UIViewController {
         } else {
             bookImageView.image = UIImage(systemName: "book.closed")
         }
+    }
+}
+import UIKit
+import AudioToolbox
+
+
+class SoundButton: UIButton {
+
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupSoundAction()
+    }
+
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupSoundAction()
+    }
+
+
+    private func setupSoundAction() {
+
+        self.addTarget(self, action: #selector(playSoundAndVibe), for: .touchDown)
+    }
+
+
+    @objc private func playSoundAndVibe() {
+
+        AudioServicesPlaySystemSound(1104)
+        
+
+        let generator = UIImpactFeedbackGenerator(style: .rigid)
+        generator.impactOccurred()
     }
 }

@@ -5,6 +5,7 @@
 //  Created by Kanta on 2026/04/08.
 //
 import UIKit
+import AudioToolbox
 
 class BookViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -40,6 +41,11 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        AudioServicesPlaySystemSound(1104)
+            
+   
+        let generator = UIImpactFeedbackGenerator(style: .rigid)
+        generator.impactOccurred()
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let book = displayBooks[indexPath.row]
         cell.textLabel?.text = book.author
