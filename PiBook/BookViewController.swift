@@ -39,18 +39,42 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return displayBooks.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         AudioServicesPlaySystemSound(1104)
             
-   
         let generator = UIImpactFeedbackGenerator(style: .rigid)
         generator.impactOccurred()
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        if cell == nil {
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        }
+        
         let book = displayBooks[indexPath.row]
-        cell.textLabel?.text = book.author
-        cell.detailTextLabel?.text = book.title
-        return cell
+        let targetGakunen = book.gakunenn
+        
+        var imageToDisplay: UIImage? = nil
+        if !targetGakunen.isEmpty {
+            imageToDisplay = UIImage(named: targetGakunen)
+        }
+        
+        if imageToDisplay == nil {
+            imageToDisplay = UIImage(named: "book")
+        }
+        
+        if cell?.imageView?.superview != nil {
+            cell?.imageView?.image = imageToDisplay
+        } else {
+            let forcedImageView = UIImageView(image: imageToDisplay)
+            forcedImageView.contentMode = .scaleAspectFit
+            forcedImageView.frame = CGRect(x: 10, y: 5, width: 40, height: 40)
+            cell?.contentView.addSubview(forcedImageView)
+        }
+        
+        cell?.textLabel?.text = book.author
+        cell?.detailTextLabel?.text = book.title
+        return cell!
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

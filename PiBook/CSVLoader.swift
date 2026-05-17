@@ -11,39 +11,31 @@ class CSVLoader {
     
     static func load() -> [Book] {
         var books = [Book]()
-        let fileName = "books.csv"
-        let fileManager = FileManager.default
-        let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
-        guard let documentURL = urls.first else { return books }
-        let fileURL = documentURL.appendingPathComponent(fileName)
-        
         var csvString = ""
         
-        do {
-            if fileManager.fileExists(atPath: fileURL.path) {
-                csvString = try String(contentsOf: fileURL, encoding: .utf8)
-            } else if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
+        if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
+            do {
                 csvString = try String(contentsOfFile: bundlePath, encoding: .utf8)
-            } else {
+            } catch {
+                print("CSV Error: \(error)")
                 return books
             }
-            
-            let lines = csvString.components(separatedBy: .newlines)
-            
-            for line in lines {
-                if line.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    continue
-                }
-                
-                let columns = parseCSVLine(line)
-                
-                if columns.count >= 15 {
-                    books.append(Book(row: columns))
-                }
+        } else {
+            return books
+        }
+        
+        let lines = csvString.components(separatedBy: .newlines)
+        
+        for line in lines {
+            if line.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                continue
             }
             
-        } catch {
-            print("CSV Error: \(error)")
+            let columns = parseCSVLine(line)
+            
+            if columns.count >= 7 {
+                books.append(Book(row: columns))
+            }
         }
         
         return books
