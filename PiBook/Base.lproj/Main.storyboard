@@ -1256,7 +1256,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景本リスト" translatesAutoresizingMaskIntoConstraints="NO" id="WSc-RS-em8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景リスト" translatesAutoresizingMaskIntoConstraints="NO" id="WSc-RS-em8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9916992188" green="0.9545898438" blue="0.7817382812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1627,9 +1627,9 @@
         <image name="扉知識" width="360" height="640"/>
         <image name="扉神話" width="360" height="640"/>
         <image name="扉算数" width="360" height="640"/>
+        <image name="背景リスト" width="360" height="640"/>
         <image name="背景本の登録リハ前" width="360" height="640"/>
         <image name="背景本の紹介リハ前" width="360" height="640"/>
-        <image name="背景本リスト" width="360" height="640"/>
         <image name="表紙１" width="360" height="640"/>
         <image name="表紙２" width="360" height="640"/>
         <image name="質問パズル" width="360" height="640"/>
