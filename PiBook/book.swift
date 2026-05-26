@@ -18,13 +18,13 @@ class Book {
     var category3: String
     var category4: String
     var summary: String
-    var gakunenn: String
+    var gakunen: String
 
     init(row: [String]) {
         self.title = row.count > 0 ? row[0] : "不明"
         self.author = row.count > 2 ? row[2] : "不明"
         self.publisher = row.count > 3 ? row[3] : "不明"
-        self.gakunenn = row.count > 6 ? row[6].replacingOccurrences(of: "\"", with: "").trimmingCharacters(in: .whitespacesAndNewlines) : "高学年"
+        self.gakunen = row.count > 5 ? row[5].replacingOccurrences(of: "\"", with: "").trimmingCharacters(in: .whitespacesAndNewlines) : "高学年"
         
         var foundPage = "0"
         for item in row {

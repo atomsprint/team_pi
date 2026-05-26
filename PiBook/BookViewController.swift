@@ -52,7 +52,7 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         let book = displayBooks[indexPath.row]
-        let targetGakunen = book.gakunenn
+        let targetGakunen = book.gakunen
         
         var imageToDisplay: UIImage? = nil
         if !targetGakunen.isEmpty {

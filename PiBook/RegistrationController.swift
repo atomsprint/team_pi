@@ -16,13 +16,17 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var genreButton: UIButton!
     @IBOutlet weak var summaryTextView: UITextView!
     @IBOutlet weak var bookImageView: UIImageView!
+    @IBOutlet weak var ageButton: UIButton!
 
     var selectedGenre: String = "未選択"
+    var selectedAge: String = "未選択"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupGenreMenu()
+        setupUII()
+        setupAgeMenu()
     }
 
     private func setupUI() {
@@ -47,6 +51,26 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         genreButton.menu = UIMenu(title: "ジャンルを選択", children: actions)
         genreButton.showsMenuAsPrimaryAction = true
     }
+    private func setupUII() {
+        summaryTextView.layer.borderWidth = 1.0
+        summaryTextView.layer.borderColor = UIColor.systemGray4.cgColor
+        summaryTextView.layer.cornerRadius = 5.0
+    }
+
+    private func setupAgeMenu() {
+        let genres = [
+            "低学年","中学年","高学年","大人"
+        ]
+        let actions = genres.map { title in
+            UIAction(title: title) { [weak self] _ in
+                self?.selectedAge = title
+                self?.ageButton.setTitle(title, for: .normal)
+            }
+        }
+        ageButton.menu = UIMenu(title: "ジャンルを選択", children: actions)
+        ageButton.showsMenuAsPrimaryAction = true
+    }
+    
 
     @IBAction func selectImageButtonTapped(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -78,7 +102,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         }
         
         let csvArray = [
-            title, "", author, publisher, "", "", "", "", pageCount, "",
+            title, "", author, publisher, "", selectedAge, "", "", pageCount, "",
             selectedGenre, "", "", "", summary
         ]
         let newLine = csvArray.joined(separator: ",") + "\n"
