@@ -1605,9 +1605,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="l8c-P3-N2A"/>
                     <connections>
-                        <outlet property="ageButton" destination="6ky-Sj-ewz" id="ud0-wI-Kfp"/>
                         <outlet property="authorTextField" destination="xcg-n5-hlb" id="rdf-FH-1X7"/>
                         <outlet property="bookImageView" destination="LCH-y9-I0T" id="WWi-vj-hPU"/>
+                        <outlet property="gakunenButton" destination="6ky-Sj-ewz" id="NpR-96-RaL"/>
                         <outlet property="genreButton" destination="LZy-gd-0c5" id="yl3-Nb-iRS"/>
                         <outlet property="pageCountTextField" destination="vC3-SZ-Vbl" id="nlQ-w7-pwg"/>
                         <outlet property="publisherTextField" destination="Q6l-uw-dYY" id="umt-pA-6Ka"/>

@@ -5,6 +5,7 @@
 //  Created by Kanta on 2026/04/29.
 //
 
+
 import UIKit
 
 class RegistrationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -16,17 +17,17 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var genreButton: UIButton!
     @IBOutlet weak var summaryTextView: UITextView!
     @IBOutlet weak var bookImageView: UIImageView!
-    @IBOutlet weak var ageButton: UIButton!
+    @IBOutlet weak var gakunenButton: UIButton!
 
     var selectedGenre: String = "未選択"
-    var selectedAge: String = "未選択"
+    var selectedGakunen: String = "未選択"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupGenreMenu()
         setupUII()
-        setupAgeMenu()
+        setupGakunenMenu()
     }
 
     private func setupUI() {
@@ -51,26 +52,26 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         genreButton.menu = UIMenu(title: "ジャンルを選択", children: actions)
         genreButton.showsMenuAsPrimaryAction = true
     }
+
     private func setupUII() {
         summaryTextView.layer.borderWidth = 1.0
         summaryTextView.layer.borderColor = UIColor.systemGray4.cgColor
         summaryTextView.layer.cornerRadius = 5.0
     }
 
-    private func setupAgeMenu() {
+    private func setupGakunenMenu() {
         let genres = [
-            "低学年","中学年","高学年","大人"
+            "高学年", "中学年", "低学年", "大人"
         ]
         let actions = genres.map { title in
             UIAction(title: title) { [weak self] _ in
-                self?.selectedAge = title
-                self?.ageButton.setTitle(title, for: .normal)
+                self?.selectedGakunen = title
+                self?.gakunenButton.setTitle(title, for: .normal)
             }
         }
-        ageButton.menu = UIMenu(title: "ジャンルを選択", children: actions)
-        ageButton.showsMenuAsPrimaryAction = true
+        gakunenButton.menu = UIMenu(title: "学年を選択", children: actions)
+        gakunenButton.showsMenuAsPrimaryAction = true
     }
-    
 
     @IBAction func selectImageButtonTapped(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -95,6 +96,13 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
 
         let fileManager = FileManager.default
         let documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileURL = documentURL.appendingPathComponent("books.csv")
+
+        if !fileManager.fileExists(atPath: fileURL.path) {
+            if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
+                try? fileManager.copyItem(atPath: bundlePath, toPath: fileURL.path)
+            }
+        }
 
         if let image = bookImageView.image, let data = image.jpegData(compressionQuality: 0.8) {
             let imageURL = documentURL.appendingPathComponent("\(title).jpg")
@@ -102,23 +110,30 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         }
         
         let csvArray = [
-            title, "", author, publisher, "", selectedAge, "", "", pageCount, "",
-            selectedGenre, "", "", "", summary
+            "\"\(title)\"",
+            "\"\"",
+            "\"\(author)\"",
+            "\"\(publisher)\"",
+            "\"\"",
+            "\"\"",
+            "\"\(selectedGakunen)\"",
+            "\"\"",
+            "\"\"",
+            "\"\(pageCount)\"",
+            "\"\"",
+            "\"\(selectedGenre)\"",
+            "\"\"",
+            "\"\"",
+            "\"\"",
+            "\"\(summary)\""
         ]
         let newLine = csvArray.joined(separator: ",") + "\n"
         
-        let fileURL = documentURL.appendingPathComponent("books.csv")
+        print("新しく書き込むデータ： \(newLine)")
         
-        if !fileManager.fileExists(atPath: fileURL.path) {
-            if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
-                try? fileManager.copyItem(atPath: bundlePath, toPath: fileURL.path)
-            }
-        }
-        
-        if let fileHandle = try? FileHandle(forWritingTo: fileURL) {
-            fileHandle.seekToEndOfFile()
-            fileHandle.write(newLine.data(using: .utf8)!)
-            fileHandle.closeFile()
+        if let currentContent = try? String(contentsOf: fileURL, encoding: .utf8) {
+            let updatedContent = currentContent + newLine
+            try? updatedContent.write(to: fileURL, atomically: true, encoding: .utf8)
         } else {
             try? newLine.write(to: fileURL, atomically: true, encoding: .utf8)
         }
