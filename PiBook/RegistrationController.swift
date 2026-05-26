@@ -96,25 +96,22 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
 
         let fileManager = FileManager.default
         let documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let fileURL = documentURL.appendingPathComponent("books.csv")
-
-        if !fileManager.fileExists(atPath: fileURL.path) {
-            if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
-                try? fileManager.copyItem(atPath: bundlePath, toPath: fileURL.path)
-            }
-        }
+        CSVLoader.ensureWorkingCSVExists()
+        let fileURL = CSVLoader.workingCSVURL()
 
         if let image = bookImageView.image, let data = image.jpegData(compressionQuality: 0.8) {
             let imageURL = documentURL.appendingPathComponent("\(title).jpg")
             try? data.write(to: imageURL)
         }
         
+        // preload_books.csv と同じ17列構成
+        // 0:タイトル 1:シリーズ 2:著者 3:出版社 4:出版年 5:学年
+        // 6-7:フラグ 8:ページ数 9:タグ 10-13:ジャンル 14:あらすじ 15-16:予備
         let csvArray = [
             "\"\(title)\"",
             "\"\"",
             "\"\(author)\"",
             "\"\(publisher)\"",
-            "\"\"",
             "\"\"",
             "\"\(selectedGakunen)\"",
             "\"\"",
@@ -125,7 +122,9 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
             "\"\"",
             "\"\"",
             "\"\"",
-            "\"\(summary)\""
+            "\"\(summary)\"",
+            "\"\"",
+            "\"\""
         ]
         let newLine = csvArray.joined(separator: ",") + "\n"
         

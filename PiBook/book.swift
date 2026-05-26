@@ -26,29 +26,47 @@ class Book {
         self.publisher = row.count > 3 ? row[3] : "不明"
         self.gakunen = row.count > 5 ? row[5].replacingOccurrences(of: "\"", with: "").trimmingCharacters(in: .whitespacesAndNewlines) : "高学年"
         
-        var foundPage = "0"
+        if row.count > 8 {
+            let pageText = row[8].trimmingCharacters(in: .whitespacesAndNewlines)
+            if let pageNum = Int(pageText), pageNum >= 10 && pageNum <= 999 {
+                self.pageCount = pageText
+            } else {
+                self.pageCount = Self.findPageCount(in: row)
+            }
+        } else {
+            self.pageCount = Self.findPageCount(in: row)
+        }
+        
+        self.category1 = row.count > 10 ? row[10].trimmingCharacters(in: .whitespacesAndNewlines) : ""
+        self.category2 = row.count > 11 ? row[11].trimmingCharacters(in: .whitespacesAndNewlines) : ""
+        self.category3 = row.count > 12 ? row[12].trimmingCharacters(in: .whitespacesAndNewlines) : ""
+        self.category4 = row.count > 13 ? row[13].trimmingCharacters(in: .whitespacesAndNewlines) : ""
+        
+        if row.count > 14 {
+            let summaryText = row[14].trimmingCharacters(in: .whitespacesAndNewlines)
+            self.summary = summaryText.isEmpty ? Self.findSummary(in: row) : summaryText
+        } else {
+            self.summary = Self.findSummary(in: row)
+        }
+    }
+    
+    private static func findPageCount(in row: [String]) -> String {
         for item in row {
             let cleaned = item.trimmingCharacters(in: .whitespacesAndNewlines)
             if let pageNum = Int(cleaned), pageNum >= 10 && pageNum <= 999 {
-                foundPage = cleaned
-                break
+                return cleaned
             }
         }
-        self.pageCount = foundPage
-        
-        self.category1 = row.count > 11 ? row[11].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category2 = row.count > 12 ? row[12].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category3 = row.count > 13 ? row[13].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category4 = row.count > 14 ? row[14].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        
-        var foundSummary = "あらすじなし"
+        return "0"
+    }
+    
+    private static func findSummary(in row: [String]) -> String {
         for item in row {
             let cleaned = item.trimmingCharacters(in: .whitespacesAndNewlines)
             if cleaned.count >= 30 {
-                foundSummary = cleaned
-                break
+                return cleaned
             }
         }
-        self.summary = foundSummary
+        return "あらすじなし"
     }
 }

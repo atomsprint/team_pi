@@ -111,13 +111,15 @@ class BookListViewController: UIViewController {
         guard let targetTitle = book?.title else { return }
         let fileManager = FileManager.default
         let documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let csvURL = documentURL.appendingPathComponent("books.csv")
+        let csvURL = CSVLoader.workingCSVURL()
         
         if let csvString = try? String(contentsOf: csvURL, encoding: .utf8) {
-            let lines = csvString.components(separatedBy: "\n")
+            let lines = csvString.components(separatedBy: .newlines)
             let filteredLines = lines.filter { line in
-                let columns = line.components(separatedBy: ",")
-                return columns.first != targetTitle && !line.isEmpty
+                let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !trimmed.isEmpty else { return false }
+                let columns = CSVLoader.parseCSVLine(trimmed)
+                return columns.first?.trimmingCharacters(in: .whitespacesAndNewlines) != targetTitle
             }
             let newContent = filteredLines.joined(separator: "\n") + "\n"
             try? newContent.write(to: csvURL, atomically: true, encoding: .utf8)

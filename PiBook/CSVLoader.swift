@@ -9,18 +9,53 @@ import Foundation
 
 class CSVLoader {
     
+    private static let workingCSVFileName = "books.csv"
+    private static let preloadCSVName = "preload_books"
+    private static let preloadCSVExtension = "csv"
+    private static let preloadCSVSubdirectory = "data"
+    
+    static func ensureWorkingCSVExists() {
+        let fileManager = FileManager.default
+        let destinationURL = workingCSVURL()
+        
+        guard !fileManager.fileExists(atPath: destinationURL.path) else {
+            return
+        }
+        
+        guard
+            let preloadPath = Bundle.main.path(
+                forResource: preloadCSVName,
+                ofType: preloadCSVExtension,
+                inDirectory: preloadCSVSubdirectory
+            )
+        else {
+            print("Preload CSV not found in bundle.")
+            return
+        }
+        
+        do {
+            try fileManager.copyItem(atPath: preloadPath, toPath: destinationURL.path)
+        } catch {
+            print("Failed to copy preload CSV: \(error)")
+        }
+    }
+    
+    static func workingCSVURL() -> URL {
+        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentURL.appendingPathComponent(workingCSVFileName)
+    }
+    
     static func load() -> [Book] {
         var books = [Book]()
         var csvString = ""
         
-        if let bundlePath = Bundle.main.path(forResource: "books", ofType: "csv") {
-            do {
-                csvString = try String(contentsOfFile: bundlePath, encoding: .utf8)
-            } catch {
-                print("CSV Error: \(error)")
-                return books
-            }
-        } else {
+        ensureWorkingCSVExists()
+        
+        let csvURL = workingCSVURL()
+        do {
+            csvString = try String(contentsOf: csvURL, encoding: .utf8)
+        } catch {
+            print("CSV Error: \(error)")
             return books
         }
         
