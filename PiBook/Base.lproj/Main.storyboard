@@ -1268,7 +1268,7 @@
                                 <color key="separatorColor" name="Backgroundcolor"/>
                                 <color key="sectionIndexBackgroundColor" name="Backgroundcolor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="cVX-5K-fdR" detailTextLabel="qwD-q9-0fV" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="2L0-Mx-yuW" userLabel="bookcell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="Cell" textLabel="cVX-5K-fdR" detailTextLabel="qwD-q9-0fV" imageView="HEL-Xw-JSF" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="2L0-Mx-yuW" userLabel="bookcell">
                                         <rect key="frame" x="0.0" y="50.5" width="414" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2L0-Mx-yuW" id="2vW-Hl-j2L">
@@ -1276,23 +1276,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cVX-5K-fdR">
-                                                    <rect key="frame" x="20" y="26" width="25" height="14.5"/>
+                                                    <rect key="frame" x="123" y="26" width="25" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qwD-q9-0fV">
-                                                    <rect key="frame" x="20" y="42.5" width="53" height="18"/>
+                                                    <rect key="frame" x="123" y="42.5" width="53" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="中学年" id="HEL-Xw-JSF">
+                                                    <rect key="frame" x="20" y="0.0" width="88" height="88"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lxB-O9-bGm" kind="show" identifier="toBookList" trigger="accessoryAction" id="1mO-vD-7nm"/>
+                                            <segue destination="lxB-O9-bGm" kind="show" identifier="showDetail" trigger="accessoryAction" id="1mO-vD-7nm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1487,104 +1491,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-RS-7OU" customClass="SoundButton" customModule="PiBook" customModuleProvider="target">
-                                <rect key="frame" x="183" y="731" width="211" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="この本を登録する"/>
-                                <connections>
-                                    <action selector="saveButtonTapped:" destination="tNw-NH-3Fa" eventType="touchUpInside" id="ObJ-Vh-lVY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-ic-ZRc" customClass="SoundButton" customModule="PiBook" customModuleProvider="target">
-                                <rect key="frame" x="35" y="601" width="131" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="画像を選択する"/>
-                                <connections>
-                                    <action selector="selectImageButtonTapped:" destination="tNw-NH-3Fa" eventType="touchUpInside" id="qqM-Rc-j5x"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景本の登録リハ前" translatesAutoresizingMaskIntoConstraints="NO" id="Hz3-oV-RVb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMQ-dT-fTo">
-                                <rect key="frame" x="20" y="116" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-Qw-IIv">
-                                <rect key="frame" x="20" y="205" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ページ数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv9-GW-7k1">
-                                <rect key="frame" x="20" y="377" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あらすじ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynt-UJ-567">
-                                <rect key="frame" x="20" y="452" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出版社" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwh-nB-1rN">
-                                <rect key="frame" x="20" y="296" width="93" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwt-4N-1jV">
-                                <rect key="frame" x="129" y="118" width="240" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcg-n5-hlb">
-                                <rect key="frame" x="129" y="205" width="240" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6l-uw-dYY">
-                                <rect key="frame" x="129" y="298" width="240" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vC3-SZ-Vbl">
-                                <rect key="frame" x="129" y="379" width="240" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bo7-7D-oS2">
-                                <rect key="frame" x="129" y="421" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-Sj-ewz">
-                                <rect key="frame" x="183" y="584" width="211" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="おすすめの年齢を選ぶ"/>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-gd-0c5" customClass="SoundButton" customModule="PiBook" customModuleProvider="target">
-                                <rect key="frame" x="183" y="652" width="211" height="60"/>
+                                <rect key="frame" x="183" y="717" width="211" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1595,8 +1503,104 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-Sj-ewz">
+                                <rect key="frame" x="183" y="649" width="211" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="おすすめの年齢を選ぶ"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-RS-7OU" customClass="SoundButton" customModule="PiBook" customModuleProvider="target">
+                                <rect key="frame" x="203" y="88" width="211" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="この本を登録する"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="tNw-NH-3Fa" eventType="touchUpInside" id="ObJ-Vh-lVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-ic-ZRc" customClass="SoundButton" customModule="PiBook" customModuleProvider="target">
+                                <rect key="frame" x="35" y="652" width="131" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="画像を選択する"/>
+                                <connections>
+                                    <action selector="selectImageButtonTapped:" destination="tNw-NH-3Fa" eventType="touchUpInside" id="qqM-Rc-j5x"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="登録画面" translatesAutoresizingMaskIntoConstraints="NO" id="Hz3-oV-RVb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMQ-dT-fTo">
+                                <rect key="frame" x="20" y="209" width="93" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-Qw-IIv">
+                                <rect key="frame" x="20" y="276" width="93" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ページ数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv9-GW-7k1">
+                                <rect key="frame" x="20" y="416" width="93" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あらすじ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynt-UJ-567">
+                                <rect key="frame" x="33" y="537" width="93" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出版社" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwh-nB-1rN">
+                                <rect key="frame" x="20" y="348" width="93" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwt-4N-1jV">
+                                <rect key="frame" x="129" y="211" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcg-n5-hlb">
+                                <rect key="frame" x="129" y="276" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6l-uw-dYY">
+                                <rect key="frame" x="129" y="348" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vC3-SZ-Vbl">
+                                <rect key="frame" x="129" y="416" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bo7-7D-oS2">
+                                <rect key="frame" x="129" y="492" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCH-y9-I0T">
-                                <rect key="frame" x="35" y="601" width="134" height="122"/>
+                                <rect key="frame" x="33" y="655" width="134" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1624,42 +1628,43 @@
         <segue reference="fwB-7S-vuO"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="扉スポーツ" width="360" height="640"/>
-        <image name="扉ファンタジー" width="360" height="640"/>
-        <image name="扉ミステリー" width="360" height="640"/>
-        <image name="扉ユーモア" width="360" height="640"/>
-        <image name="扉不思議" width="360" height="640"/>
-        <image name="扉伝記" width="360" height="640"/>
-        <image name="扉冒険" width="360" height="640"/>
-        <image name="扉動物" width="360" height="640"/>
-        <image name="扉友達" width="360" height="640"/>
-        <image name="扉学校" width="360" height="640"/>
-        <image name="扉家族" width="360" height="640"/>
-        <image name="扉恐怖" width="360" height="640"/>
-        <image name="扉文学" width="360" height="640"/>
-        <image name="扉知識" width="360" height="640"/>
-        <image name="扉神話" width="360" height="640"/>
-        <image name="扉算数" width="360" height="640"/>
-        <image name="背景リスト" width="360" height="640"/>
-        <image name="背景本の登録リハ前" width="360" height="640"/>
-        <image name="背景本の紹介リハ前" width="360" height="640"/>
-        <image name="表紙１" width="360" height="640"/>
-        <image name="表紙２" width="360" height="640"/>
-        <image name="質問パズル" width="360" height="640"/>
-        <image name="質問人の人生" width="360" height="640"/>
-        <image name="質問先生" width="360" height="640"/>
-        <image name="質問全く違う" width="360" height="640"/>
-        <image name="質問冒険" width="360" height="640"/>
-        <image name="質問動物自然" width="360" height="640"/>
-        <image name="質問名作" width="360" height="640"/>
-        <image name="質問学校" width="360" height="640"/>
-        <image name="質問怖い" width="360" height="640"/>
-        <image name="質問数" width="360" height="640"/>
-        <image name="質問本当に" width="360" height="640"/>
-        <image name="質問神様" width="360" height="640"/>
-        <image name="質問笑いたい" width="360" height="640"/>
-        <image name="質問運動" width="360" height="640"/>
-        <image name="質問魔法" width="360" height="640"/>
+        <image name="中学年" width="341.5" height="341.5"/>
+        <image name="扉スポーツ" width="240" height="426.5"/>
+        <image name="扉ファンタジー" width="240" height="426.5"/>
+        <image name="扉ミステリー" width="240" height="426.5"/>
+        <image name="扉ユーモア" width="240" height="426.5"/>
+        <image name="扉不思議" width="240" height="426.5"/>
+        <image name="扉伝記" width="240" height="426.5"/>
+        <image name="扉冒険" width="240" height="426.5"/>
+        <image name="扉動物" width="240" height="426.5"/>
+        <image name="扉友達" width="240" height="426.5"/>
+        <image name="扉学校" width="240" height="426.5"/>
+        <image name="扉家族" width="240" height="426.5"/>
+        <image name="扉恐怖" width="240" height="426.5"/>
+        <image name="扉文学" width="240" height="426.5"/>
+        <image name="扉知識" width="240" height="426.5"/>
+        <image name="扉神話" width="240" height="426.5"/>
+        <image name="扉算数" width="240" height="426.5"/>
+        <image name="登録画面" width="360" height="640"/>
+        <image name="背景リスト" width="240" height="426.5"/>
+        <image name="背景本の紹介リハ前" width="240" height="426.5"/>
+        <image name="表紙１" width="240" height="426.5"/>
+        <image name="表紙２" width="240" height="426.5"/>
+        <image name="質問パズル" width="240" height="426.5"/>
+        <image name="質問人の人生" width="240" height="426.5"/>
+        <image name="質問先生" width="240" height="426.5"/>
+        <image name="質問全く違う" width="240" height="426.5"/>
+        <image name="質問冒険" width="240" height="426.5"/>
+        <image name="質問動物自然" width="240" height="426.5"/>
+        <image name="質問名作" width="240" height="426.5"/>
+        <image name="質問学校" width="240" height="426.5"/>
+        <image name="質問怖い" width="240" height="426.5"/>
+        <image name="質問数" width="240" height="426.5"/>
+        <image name="質問本当に" width="240" height="426.5"/>
+        <image name="質問神様" width="240" height="426.5"/>
+        <image name="質問笑いたい" width="240" height="426.5"/>
+        <image name="質問運動" width="240" height="426.5"/>
+        <image name="質問魔法" width="240" height="426.5"/>
         <namedColor name="Backgroundcolor">
             <color red="0.81800001859664917" green="0.78899997472763062" blue="0.69900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

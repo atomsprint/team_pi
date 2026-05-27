@@ -45,7 +45,7 @@ class CSVLoader {
         return documentURL.appendingPathComponent(workingCSVFileName)
     }
     
-    static func load() -> [Book] {
+    static func loadBooks() -> [Book] {
         var books = [Book]()
         var csvString = ""
         

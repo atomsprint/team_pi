@@ -10,14 +10,12 @@ import AudioToolbox // 💡 4桁の音を鳴らすために必須
 struct ContentView: View {
     var body: some View {
         VStack {
-            // 💡 ここからボタンのコード
             Button(action: {
-                // ① 4桁の数字で音を鳴らす（1104番 = カチッ）
+
                 AudioServicesPlaySystemSound(1104)
                 
 
-                
-                // ② バイブレーション（触覚フィードバック）を発生させる
+    
                 let generator = UIImpactFeedbackGenerator(style: .heavy)
                 generator.impactOccurred()
             }) {
@@ -29,12 +27,12 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            // 💡 ここまでボタンのコード
+  
         }
     }
 }
 
-// プレビュー用（無視して大丈夫です）
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
