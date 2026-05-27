@@ -4,6 +4,7 @@
 //
 //  Created by Kanta on 2026/04/08.
 //
+
 import UIKit
 import AudioToolbox
 
@@ -48,26 +49,9 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.reloadData()
     }
 
-    func gradeImageName(from gakunen: String) -> String? {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
 
-        if gakunen.contains("1") {
-            return "grade1"
-        } else if gakunen.contains("2") {
-            return "grade2"
-        } else if gakunen.contains("3") {
-            return "grade3"
-        } else if gakunen.contains("4") {
-            return "grade4"
-        } else if gakunen.contains("5") {
-            return "grade5"
-        } else if gakunen.contains("6") {
-            return "grade6"
-        }
-
-        return nil
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return displayBooks.count
     }
 
@@ -88,20 +72,34 @@ class BookViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let book = displayBooks[indexPath.row]
 
         let targetGakunen = book.gakunen
+            .replacingOccurrences(of: "\"", with: "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
 
-        var imageToDisplay: UIImage? = nil
+        print("タイトル：\(book.title) / 学年：\(targetGakunen)")
 
-        if let imageName = gradeImageName(from: targetGakunen) {
-            imageToDisplay = UIImage(named: imageName)
+        if targetGakunen.contains("低") {
+
+            cell?.imageView?.image = UIImage(named: "低学年")
+
+        } else if targetGakunen.contains("中") {
+
+            cell?.imageView?.image = UIImage(named: "中学年")
+
+        } else if targetGakunen.contains("高") {
+
+            cell?.imageView?.image = UIImage(named: "高学年")
+
+        } else if targetGakunen.contains("大人") {
+
+            cell?.imageView?.image = UIImage(named: "大人")
+
+        } else {
+
+            cell?.imageView?.image = UIImage(named: "高学年")
         }
 
-        if imageToDisplay == nil {
-            imageToDisplay = UIImage(named: "book")
-        }
-
-        cell?.imageView?.image = imageToDisplay
-        cell?.textLabel?.text = book.title
-        cell?.detailTextLabel?.text = book.author
+        cell?.textLabel?.text = book.author
+        cell?.detailTextLabel?.text = book.title
 
         return cell!
     }

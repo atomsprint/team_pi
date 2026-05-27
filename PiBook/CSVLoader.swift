@@ -1,85 +1,90 @@
-//
-//  CSVLoader.swift
-//  PiBook
-//
-//  Created by Kanta on 2026/03/16.
-//
-
 import Foundation
 
 class CSVLoader {
-    
+
     private static let workingCSVFileName = "books.csv"
-    private static let preloadCSVName = "preload_books"
-    private static let preloadCSVExtension = "csv"
-    private static let preloadCSVSubdirectory = "data"
-    
+
     static func ensureWorkingCSVExists() {
         let fileManager = FileManager.default
         let destinationURL = workingCSVURL()
-        
-        guard !fileManager.fileExists(atPath: destinationURL.path) else {
+
+        let preloadURL1 = Bundle.main.url(
+            forResource: "preload_books",
+            withExtension: "csv",
+            subdirectory: "data"
+        )
+
+        let preloadURL2 = Bundle.main.url(
+            forResource: "preload_books",
+            withExtension: "csv"
+        )
+
+        guard let preloadURL = preloadURL1 ?? preloadURL2 else {
+            print("preload_books.csv が見つかりません")
             return
         }
-        
-        guard
-            let preloadPath = Bundle.main.path(
-                forResource: preloadCSVName,
-                ofType: preloadCSVExtension,
-                inDirectory: preloadCSVSubdirectory
-            )
-        else {
-            print("Preload CSV not found in bundle.")
-            return
+
+        print("コピー元CSV：\(preloadURL.path)")
+        print("コピー先CSV：\(destinationURL.path)")
+
+        if fileManager.fileExists(atPath: destinationURL.path) {
+            try? fileManager.removeItem(at: destinationURL)
         }
-        
+
         do {
-            try fileManager.copyItem(atPath: preloadPath, toPath: destinationURL.path)
+            try fileManager.copyItem(at: preloadURL, to: destinationURL)
+            print("CSVコピー成功")
         } catch {
-            print("Failed to copy preload CSV: \(error)")
+            print("CSVコピー失敗：\(error)")
         }
     }
-    
+
     static func workingCSVURL() -> URL {
-        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let documentURL = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        ).first!
+
         return documentURL.appendingPathComponent(workingCSVFileName)
     }
-    
+
     static func loadBooks() -> [Book] {
-        var books = [Book]()
-        var csvString = ""
-        
+        var books: [Book] = []
+
         ensureWorkingCSVExists()
-        
+
         let csvURL = workingCSVURL()
-        do {
-            csvString = try String(contentsOf: csvURL, encoding: .utf8)
-        } catch {
-            print("CSV Error: \(error)")
+
+        guard let csvString = try? String(contentsOf: csvURL, encoding: .utf8) else {
+            print("CSVを読み込めません：\(csvURL.path)")
             return books
         }
-        
+
         let lines = csvString.components(separatedBy: .newlines)
-        
+
         for line in lines {
-            if line.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            if trimmed.isEmpty {
                 continue
             }
-            
-            let columns = parseCSVLine(line)
-            
+
+            let columns = parseCSVLine(trimmed)
+
             if columns.count >= 7 {
                 books.append(Book(row: columns))
             }
         }
-        
+
+        print("読み込んだ本の数：\(books.count)")
         return books
     }
-    
+
     static func parseCSVLine(_ line: String) -> [String] {
         var result: [String] = []
         var current = ""
         var insideQuotes = false
+
         for char in line {
             if char == "\"" {
                 insideQuotes.toggle()
@@ -90,6 +95,7 @@ class CSVLoader {
                 current.append(char)
             }
         }
+
         result.append(current.trimmingCharacters(in: .whitespacesAndNewlines))
         return result
     }
