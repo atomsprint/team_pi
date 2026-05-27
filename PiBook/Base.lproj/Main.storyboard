@@ -735,7 +735,7 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="ファンタジーの扉" id="Pab-4C-skH"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉ファンタジー" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-WS-7BU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉ファンタジー" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-WS-7BU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -815,7 +815,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="質問パズル" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-9C-5YW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="質問パズル" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-9C-5YW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87109375" green="0.9536132812" blue="0.8168945312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1144,7 +1144,7 @@
                                     <segue destination="CQQ-jj-6ly" kind="show" identifier="スポーツの扉" id="Sqa-P4-K2K"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉スポーツ" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-sH-aHI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扉スポーツ" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-sH-aHI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75753571549999998" green="0.95548679660000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1625,12 +1625,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fwB-7S-vuO"/>
+        <segue reference="60u-qd-DLx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="中学年" width="341.5" height="341.5"/>
-        <image name="扉スポーツ" width="240" height="426.5"/>
-        <image name="扉ファンタジー" width="240" height="426.5"/>
+        <image name="扉スポーツ" width="240" height="426.5"/>
+        <image name="扉ファンタジー" width="240" height="426.5"/>
         <image name="扉ミステリー" width="240" height="426.5"/>
         <image name="扉ユーモア" width="240" height="426.5"/>
         <image name="扉不思議" width="240" height="426.5"/>
@@ -1650,7 +1650,7 @@
         <image name="背景本の紹介リハ前" width="240" height="426.5"/>
         <image name="表紙１" width="240" height="426.5"/>
         <image name="表紙２" width="240" height="426.5"/>
-        <image name="質問パズル" width="240" height="426.5"/>
+        <image name="質問パズル" width="240" height="426.5"/>
         <image name="質問人の人生" width="240" height="426.5"/>
         <image name="質問先生" width="240" height="426.5"/>
         <image name="質問全く違う" width="240" height="426.5"/>
@@ -1678,10 +1678,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.55294117647058827" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.79607843140000001" green="0.18823529410000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
