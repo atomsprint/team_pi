@@ -5,7 +5,6 @@
 //  Created by Kanta on 2026/04/29.
 //
 
-
 import UIKit
 
 class RegistrationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -19,6 +18,9 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var bookImageView: UIImageView!
     @IBOutlet weak var gakunenButton: UIButton!
 
+    @IBOutlet weak var gakunenLabel: UILabel!
+    @IBOutlet weak var genreLabel: UILabel!
+
     var selectedGenre: String = "未選択"
     var selectedGakunen: String = "未選択"
 
@@ -26,14 +28,19 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         super.viewDidLoad()
         setupUI()
         setupGenreMenu()
-        setupUII()
         setupGakunenMenu()
+        updateSelectedLabels()
     }
 
     private func setupUI() {
         summaryTextView.layer.borderWidth = 1.0
         summaryTextView.layer.borderColor = UIColor.systemGray4.cgColor
         summaryTextView.layer.cornerRadius = 5.0
+    }
+
+    private func updateSelectedLabels() {
+        gakunenLabel.text = "学年：\(selectedGakunen)"
+        genreLabel.text = "ジャンル：\(selectedGenre)"
     }
 
     private func setupGenreMenu() {
@@ -43,32 +50,30 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
             "動物・植物の扉", "神話の扉", "知識の扉", "伝記・歴史の扉",
             "スポーツの扉", "友達の扉", "その他"
         ]
+
         let actions = genres.map { title in
             UIAction(title: title) { [weak self] _ in
                 self?.selectedGenre = title
                 self?.genreButton.setTitle(title, for: .normal)
+                self?.updateSelectedLabels()
             }
         }
+
         genreButton.menu = UIMenu(title: "ジャンルを選択", children: actions)
         genreButton.showsMenuAsPrimaryAction = true
     }
 
-    private func setupUII() {
-        summaryTextView.layer.borderWidth = 1.0
-        summaryTextView.layer.borderColor = UIColor.systemGray4.cgColor
-        summaryTextView.layer.cornerRadius = 5.0
-    }
-
     private func setupGakunenMenu() {
-        let genres = [
-            "高学年", "中学年", "低学年", "大人"
-        ]
-        let actions = genres.map { title in
+        let gakunens = ["低学年", "中学年", "高学年", "大人"]
+
+        let actions = gakunens.map { title in
             UIAction(title: title) { [weak self] _ in
                 self?.selectedGakunen = title
                 self?.gakunenButton.setTitle(title, for: .normal)
+                self?.updateSelectedLabels()
             }
         }
+
         gakunenButton.menu = UIMenu(title: "学年を選択", children: actions)
         gakunenButton.showsMenuAsPrimaryAction = true
     }
@@ -77,18 +82,18 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
-        present(picker, animated: true, completion: nil)
+        present(picker, animated: true)
     }
 
     @IBAction func saveButtonTapped(_ sender: Any) {
-        let title = titleTextField.text ?? ""
-        let author = authorTextField.text ?? ""
-        let publisher = publisherTextField.text ?? ""
-        let pageCount = pageCountTextField.text ?? ""
-        let summary = summaryTextView.text ?? ""
-        
-        if title.isEmpty || author.isEmpty || selectedGenre == "未選択" {
-            let alert = UIAlertController(title: "入力エラー", message: "未入力の項目があります", preferredStyle: .alert)
+        let title = titleTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let author = authorTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let publisher = publisherTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let pageCount = pageCountTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let summary = summaryTextView.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+
+        if title.isEmpty || author.isEmpty || selectedGenre == "未選択" || selectedGakunen == "未選択" {
+            let alert = UIAlertController(title: "入力エラー", message: "タイトル・著者・ジャンル・学年を入れてください", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             present(alert, animated: true)
             return
@@ -96,64 +101,84 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
 
         let fileManager = FileManager.default
         let documentURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        CSVLoader.ensureWorkingCSVExists()
-        let fileURL = CSVLoader.workingCSVURL()
+        let csvURL = CSVLoader.workingCSVURL()
 
-        if let image = bookImageView.image, let data = image.jpegData(compressionQuality: 0.8) {
+        if let image = bookImageView.image,
+           let data = image.jpegData(compressionQuality: 0.8) {
             let imageURL = documentURL.appendingPathComponent("\(title).jpg")
             try? data.write(to: imageURL)
         }
-        
-        // preload_books.csv と同じ17列構成
-        // 0:タイトル 1:シリーズ 2:著者 3:出版社 4:出版年 5:学年
-        // 6-7:フラグ 8:ページ数 9:タグ 10-13:ジャンル 14:あらすじ 15-16:予備
-        let csvArray = [
-            "\"\(title)\"",
-            "\"\"",
-            "\"\(author)\"",
-            "\"\(publisher)\"",
-            "\"\"",
-            "\"\(selectedGakunen)\"",
-            "\"\"",
-            "\"\"",
-            "\"\(pageCount)\"",
-            "\"\"",
-            "\"\(selectedGenre)\"",
-            "\"\"",
-            "\"\"",
-            "\"\"",
-            "\"\(summary)\"",
-            "\"\"",
-            "\"\""
-        ]
-        let newLine = csvArray.joined(separator: ",") + "\n"
-        
-        print("新しく書き込むデータ： \(newLine)")
-        
-        if let currentContent = try? String(contentsOf: fileURL, encoding: .utf8) {
-            let updatedContent = currentContent + newLine
-            try? updatedContent.write(to: fileURL, atomically: true, encoding: .utf8)
-        } else {
-            try? newLine.write(to: fileURL, atomically: true, encoding: .utf8)
+
+        func csvText(_ text: String) -> String {
+            let cleaned = text
+                .replacingOccurrences(of: "\"", with: "\"\"")
+                .replacingOccurrences(of: "\n", with: " ")
+                .replacingOccurrences(of: "\r", with: " ")
+            return "\"\(cleaned)\""
         }
-        
+
+        let csvArray = [
+            csvText(title),
+            csvText(""),
+            csvText(author),
+            csvText(publisher),
+            csvText(""),
+            csvText(selectedGakunen),
+            csvText(""),
+            csvText(""),
+            csvText(pageCount),
+            csvText(""),
+            csvText(selectedGenre),
+            csvText(""),
+            csvText(""),
+            csvText(""),
+            csvText(summary),
+            csvText(""),
+            csvText("")
+        ]
+
+        let newLine = csvArray.joined(separator: ",") + "\n"
+
+        var currentContent = ""
+
+        if let oldContent = try? String(contentsOf: csvURL, encoding: .utf8) {
+            currentContent = oldContent
+        }
+
+        if !currentContent.isEmpty && !currentContent.hasSuffix("\n") {
+            currentContent += "\n"
+        }
+
+        currentContent += newLine
+
+        do {
+            try currentContent.write(to: csvURL, atomically: true, encoding: .utf8)
+            print("登録成功：\(title)")
+        } catch {
+            print("CSV保存失敗：\(error)")
+        }
+
         let successAlert = UIAlertController(title: "成功", message: "登録しました", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+
+        successAlert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] _ in
             guard let self = self else { return }
+
             if let nav = self.navigationController {
                 nav.popViewController(animated: true)
             } else {
-                self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true)
             }
-        }
-        successAlert.addAction(okAction)
+        })
+
         present(successAlert, animated: true)
     }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
             bookImageView.image = image
         }
-        dismiss(animated: true, completion: nil)
+
+        dismiss(animated: true)
     }
 }

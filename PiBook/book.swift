@@ -21,52 +21,49 @@ class Book {
     var gakunen: String
 
     init(row: [String]) {
-        self.title = row.count > 0 ? row[0] : "不明"
-        self.author = row.count > 2 ? row[2] : "不明"
-        self.publisher = row.count > 3 ? row[3] : "不明"
-        self.gakunen = row.count > 5 ? row[5].replacingOccurrences(of: "\"", with: "").trimmingCharacters(in: .whitespacesAndNewlines) : "高学年"
-        
+        self.title = row.count > 0 ? Self.clean(row[0]) : "不明"
+        self.author = row.count > 2 ? Self.clean(row[2]) : "不明"
+        self.publisher = row.count > 3 ? Self.clean(row[3]) : "不明"
+        self.gakunen = row.count > 5 ? Self.clean(row[5]) : "高学年"
+
         if row.count > 8 {
-            let pageText = row[8].trimmingCharacters(in: .whitespacesAndNewlines)
-            if let pageNum = Int(pageText), pageNum >= 10 && pageNum <= 999 {
-                self.pageCount = pageText
-            } else {
-                self.pageCount = Self.findPageCount(in: row)
-            }
+            self.pageCount = Self.extractPageCount(from: row[8])
         } else {
-            self.pageCount = Self.findPageCount(in: row)
+            self.pageCount = "0"
         }
-        
-        self.category1 = row.count > 10 ? row[10].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category2 = row.count > 11 ? row[11].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category3 = row.count > 12 ? row[12].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        self.category4 = row.count > 13 ? row[13].trimmingCharacters(in: .whitespacesAndNewlines) : ""
-        
+
+        self.category1 = row.count > 10 ? Self.clean(row[10]) : ""
+        self.category2 = row.count > 11 ? Self.clean(row[11]) : ""
+        self.category3 = row.count > 12 ? Self.clean(row[12]) : ""
+        self.category4 = row.count > 13 ? Self.clean(row[13]) : ""
+
         if row.count > 14 {
-            let summaryText = row[14].trimmingCharacters(in: .whitespacesAndNewlines)
-            self.summary = summaryText.isEmpty ? Self.findSummary(in: row) : summaryText
+            let summaryText = Self.clean(row[14])
+            self.summary = summaryText.isEmpty ? "あらすじなし" : summaryText
         } else {
-            self.summary = Self.findSummary(in: row)
+            self.summary = "あらすじなし"
         }
     }
-    
-    private static func findPageCount(in row: [String]) -> String {
-        for item in row {
-            let cleaned = item.trimmingCharacters(in: .whitespacesAndNewlines)
-            if let pageNum = Int(cleaned), pageNum >= 10 && pageNum <= 999 {
-                return cleaned
-            }
-        }
-        return "0"
+
+    private static func clean(_ text: String) -> String {
+        return text
+            .replacingOccurrences(of: "\"", with: "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
-    private static func findSummary(in row: [String]) -> String {
-        for item in row {
-            let cleaned = item.trimmingCharacters(in: .whitespacesAndNewlines)
-            if cleaned.count >= 30 {
-                return cleaned
-            }
+
+    private static func extractPageCount(from text: String) -> String {
+        let cleaned = Self.clean(text)
+            .replacingOccurrences(of: "ページ", with: "")
+            .replacingOccurrences(of: "P", with: "")
+            .replacingOccurrences(of: "p", with: "")
+
+        let converted = cleaned.applyingTransform(.fullwidthToHalfwidth, reverse: false) ?? cleaned
+        let digits = converted.filter { $0.isNumber }
+
+        if digits.isEmpty {
+            return "0"
         }
-        return "あらすじなし"
+
+        return String(digits)
     }
 }
